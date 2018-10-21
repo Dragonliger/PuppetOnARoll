@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\MouseMotor.cs" />
     <Compile Include="Assets\Scripts\SimpleMotor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/alex_castelan/Documents/GitHub/PuppetOnARoll/PuppetOnARoll/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

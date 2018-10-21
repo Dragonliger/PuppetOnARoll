@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SimpleMotor : MonoBehaviour {
-    public float speed = 4.0f;
+    public float speed = 12.0f;
 
 	// Use this for initialization
 	void Start () {
