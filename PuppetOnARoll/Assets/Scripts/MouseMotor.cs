@@ -20,6 +20,8 @@ public class MouseMotor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Get control changes. Maybe change for default axis and just
+        // configure through unity.
         float HorizontalInput = Input.GetAxis("Mouse X");
         float HorizontalSpeed = HorizontalInput * speed * Time.deltaTime * SpatialModifier;
         float VerticalInput = Input.GetAxis("Mouse Y");
@@ -27,11 +29,14 @@ public class MouseMotor : MonoBehaviour
         float YAxisMovement = 0.0f;
         float YPosition = gameObject.transform.position.y;
 
+        // Left click to go down.
         if (Input.GetButton("Fire1"))
         {
             if (YPosition > MinimumHeight)
             {
                 YAxisMovement = -1.0f * DownSpeed * Time.deltaTime;
+                // This makes the hand snap to the lower limit instead of
+                // going through it.
                 float Difference = YPosition - MinimumHeight;
                 if (-YAxisMovement > Difference)
                 {
@@ -40,9 +45,11 @@ public class MouseMotor : MonoBehaviour
             }
 
         }
+        // When the button is released the hand goes up again.
         else if (gameObject.transform.position.y < DefaultHeight)
         {
             YAxisMovement = 1.0f * UpSpeed * Time.deltaTime;
+            // This makes the hand snap to the default position for the hand.
             float Difference = DefaultHeight - YPosition;
             if (YAxisMovement > Difference)
             {
@@ -50,6 +57,7 @@ public class MouseMotor : MonoBehaviour
             }
         }
 
+        // Apply translation.
         gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
     }
 }

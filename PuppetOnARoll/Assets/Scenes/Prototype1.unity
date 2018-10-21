@@ -261,6 +261,34 @@ Transform:
   m_Father: {fileID: 2025951051}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 44.642002, y: 0, z: 0}
+--- !u!1 &742129422
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 742129423}
+  m_Layer: 0
+  m_Name: Ruler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &742129423
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 742129422}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -10.84, y: 0, z: -8.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396434027
 GameObject:
   m_ObjectHideFlags: 0
@@ -666,8 +694,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1764177288}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.6319005, y: 1.5358, z: 1.1897397}
+  m_LocalPosition: {x: 0, y: 0, z: 4.52}
+  m_LocalScale: {x: 3.993646, y: 1.5358, z: 2.1564033}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
@@ -682,6 +710,7 @@ GameObject:
   - component: {fileID: 2025951051}
   - component: {fileID: 2025951052}
   - component: {fileID: 2025951053}
+  - component: {fileID: 2025951054}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -722,14 +751,34 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2025951050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 795269fed4cca45ac81ecc439e8e2bfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
   SpatialModifier: 2
-  DownSpeed: 10
+  DownSpeed: 25
   UpSpeed: 20
   DefaultHeight: 6.11
   MinimumHeight: 2.6
+--- !u!114 &2025951054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2025951050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 876cfefcee1ca4691a3f4883d602b8f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 35
+  DownSpeed: 30
+  UpSpeed: 20
+  DefaultHeight: 6.11
+  MinimumHeight: 2.6
+  LeftInvisiwall: -20
+  RightInvisiwall: 20
+  FrontInvisiwall: 16
+  BackInvisiwall: -9
