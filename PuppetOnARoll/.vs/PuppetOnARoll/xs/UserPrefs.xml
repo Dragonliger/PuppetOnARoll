@@ -3,8 +3,8 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MouseFollowMotor.cs">
     <Files>
       <File FileName="Assets/Scripts/SimpleMotor.cs" Line="10" Column="3" />
-      <File FileName="Assets/Scripts/MouseMotor.cs" Line="31" Column="9" />
-      <File FileName="Assets/Scripts/MouseFollowMotor.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MouseMotor.cs" Line="38" Column="1" />
+      <File FileName="Assets/Scripts/MouseFollowMotor.cs" Line="24" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

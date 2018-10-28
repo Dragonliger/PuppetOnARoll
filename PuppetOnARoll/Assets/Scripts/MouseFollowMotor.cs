@@ -15,10 +15,13 @@ public class MouseFollowMotor : MonoBehaviour
     public float FrontInvisiwall = 16.0f;
     public float BackInvisiwall = -9.0f;
 
+    private float movingflag = 1.0f;
+    public bool flagstop = true;
+
     // Use this for initialization
     void Start()
     {
-
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
@@ -93,6 +96,8 @@ public class MouseFollowMotor : MonoBehaviour
             if (Difference > VerticalSpeed)
             {
                 VerticalSpeed = Difference;
+                //if(flagstop)
+                    //movingflag = 0.0f;
             }
         }
         else
@@ -102,10 +107,12 @@ public class MouseFollowMotor : MonoBehaviour
             if (Difference < VerticalSpeed)
             {
                 VerticalSpeed = Difference;
+                if(flagstop)
+                    movingflag = 1.0f;
             }
         }
 
         // Apply translation.
-        gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
+        gameObject.transform.Translate(new Vector3(HorizontalSpeed * movingflag, YAxisMovement, VerticalSpeed));
     }
 }

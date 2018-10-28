@@ -289,6 +289,107 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1158568201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1158568206}
+  - component: {fileID: 1158568205}
+  - component: {fileID: 1158568204}
+  - component: {fileID: 1158568203}
+  - component: {fileID: 1158568202}
+  m_Layer: 0
+  m_Name: Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!54 &1158568202
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158568201}
+  serializedVersion: 2
+  m_Mass: 0.24
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &1158568203
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158568201}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1158568204
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158568201}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 2100000, guid: d325668d849964519ad36d8d804f1718, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1158568205
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158568201}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1158568206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1158568201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.244359, y: 0.83, z: 6.848694}
+  m_LocalScale: {x: 2.2603, y: 2.2603, z: 2.2603}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1396434027
 GameObject:
   m_ObjectHideFlags: 0
@@ -300,6 +401,7 @@ GameObject:
   - component: {fileID: 1396434030}
   - component: {fileID: 1396434029}
   - component: {fileID: 1396434028}
+  - component: {fileID: 1396434032}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -374,6 +476,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1396434032
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1396434027}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1529531801
 Prefab:
   m_ObjectHideFlags: 0
@@ -539,6 +656,7 @@ GameObject:
   - component: {fileID: 1577181297}
   - component: {fileID: 1577181296}
   - component: {fileID: 1577181295}
+  - component: {fileID: 1577181299}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -613,6 +731,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1577181299
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1577181294}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1764177288
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,6 +895,10 @@ MonoBehaviour:
   UpSpeed: 20
   DefaultHeight: 6.11
   MinimumHeight: 2.6
+  LeftInvisiwall: -18
+  RightInvisiwall: 18
+  FrontInvisiwall: 8
+  BackInvisiwall: -11
 --- !u!114 &2025951054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,12 +910,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876cfefcee1ca4691a3f4883d602b8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 35
-  DownSpeed: 30
-  UpSpeed: 20
+  speed: 15.56
+  DownSpeed: 20.7
+  UpSpeed: 13.9
   DefaultHeight: 6.11
   MinimumHeight: 2.6
-  LeftInvisiwall: -20
-  RightInvisiwall: 20
-  FrontInvisiwall: 16
-  BackInvisiwall: -9
+  LeftInvisiwall: -18
+  RightInvisiwall: 18
+  FrontInvisiwall: 10.04
+  BackInvisiwall: -11
+  flagstop: 1
