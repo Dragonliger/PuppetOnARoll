@@ -4,7 +4,7 @@
     <Files>
       <File FileName="Assets/Scripts/SimpleMotor.cs" Line="10" Column="3" />
       <File FileName="Assets/Scripts/MouseMotor.cs" Line="38" Column="1" />
-      <File FileName="Assets/Scripts/MouseFollowMotor.cs" Line="24" Column="32" />
+      <File FileName="Assets/Scripts/MouseFollowMotor.cs" Line="74" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
