@@ -15,6 +15,7 @@ public class MouseFollowMotor : MonoBehaviour
     public float RightInvisiwall = 20.0f;
     public float FrontInvisiwall = 16.0f;
     public float BackInvisiwall = -9.0f;
+    public bool Playing = true;
 
     private float RealSpeed = 0.0f;
 
@@ -114,8 +115,11 @@ public class MouseFollowMotor : MonoBehaviour
             }
         }
 
-        // Translation
-        // Apply translation.
-        gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
+        if (Playing)
+        {
+            // Translation
+            // Apply translation.
+            gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
+        }
     }
 }

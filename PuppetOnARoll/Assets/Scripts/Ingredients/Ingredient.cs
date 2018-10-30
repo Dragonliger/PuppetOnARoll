@@ -25,4 +25,9 @@ public class Ingredient : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+    public bool IsIngredient()
+    {
+        return true;
+    }
 }

@@ -8,6 +8,7 @@ public class Values : MonoBehaviour {
     public int BrownCylinders = 10;
     public int GreenSpheres = 5;
     public int BlueCubes = 12;
+    public GameStates GameGovernor;
 
     public void Decrease(string Tag)
     {
@@ -18,6 +19,7 @@ public class Values : MonoBehaviour {
             if (BlueCubes < 1)
             {
                 // Launch Game Over.
+                GameGovernor.GameOverScreen("Not enough ingredients.");
             }
         }
         // Decrease GreenSpheres counter.
@@ -27,6 +29,7 @@ public class Values : MonoBehaviour {
             if (GreenSpheres < 1)
             {
                 // Launch Game Over.
+                GameGovernor.GameOverScreen("Not enough ingredients.");
             }
         }
         // Decrease BrownCylinders counter.
@@ -36,6 +39,7 @@ public class Values : MonoBehaviour {
             if (BrownCylinders < 1)
             {
                 // Launch Game Over.
+                GameGovernor.GameOverScreen("Not enough ingredients.");
             }
         }
 

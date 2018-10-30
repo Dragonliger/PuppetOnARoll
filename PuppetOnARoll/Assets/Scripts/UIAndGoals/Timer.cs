@@ -8,9 +8,10 @@ public class Timer : MonoBehaviour {
     // Time in seconds assigned for level.
     public float TimerStart = 180.0f;
     public Text UITimer;
+    public GameStates GameGovernor;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -26,6 +27,7 @@ public class Timer : MonoBehaviour {
         else
         {
             //Trigger GameOver
+            GameGovernor.GameOverScreen("Timeover!");
         }
     }
 }

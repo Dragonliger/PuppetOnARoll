@@ -10,9 +10,10 @@ public class Goal : MonoBehaviour {
     public int Step3BC = 3;
     public int Step4GS = 1;
     public Text RecipeList;
+    public GameStates GameGovernor;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -62,6 +63,7 @@ public class Goal : MonoBehaviour {
             {
                 RecipeList.text = "";
                 // Victory screen.
+                GameGovernor.VictoryScreen();
             }
 
         }
