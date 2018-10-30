@@ -1,6 +1,6 @@
 ﻿<Properties StartupConfiguration="{1E2EB022-421A-8C98-8384-5067777E1AC6}|">
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIAndGoals/DumbUpdate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIAndGoals/GameStates.cs">
     <Files>
       <File FileName="Assets/Scripts/Ingredients/Values.cs" Line="17" Column="10" />
       <File FileName="Assets/Scripts/Ingredients/Ingredient.cs" Line="31" Column="21" />
@@ -8,8 +8,8 @@
       <File FileName="Assets/Scripts/UIAndGoals/Goal.cs" Line="66" Column="46" />
       <File FileName="Assets/Scripts/Motors/MouseFollowMotor.cs" Line="123" Column="10" />
       <File FileName="Assets/Scripts/Motors/Grab.cs" Line="38" Column="10" />
-      <File FileName="Assets/Scripts/UIAndGoals/GameStates.cs" Line="43" Column="78" />
-      <File FileName="Assets/Scripts/UIAndGoals/DumbUpdate.cs" Line="8" Column="19" />
+      <File FileName="Assets/Scripts/UIAndGoals/GameStates.cs" Line="12" Column="44" />
+      <File FileName="Assets/Scripts/UIAndGoals/DumbUpdate.cs" Line="18" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
