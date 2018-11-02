@@ -61,9 +61,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\MouseFollowMotor.cs" />
-    <Compile Include="Assets\Scripts\MouseMotor.cs" />
-    <Compile Include="Assets\Scripts\SimpleMotor.cs" />
+    <Compile Include="Assets\Scripts\Ingredients\Ingredient.cs" />
+    <Compile Include="Assets\Scripts\Ingredients\Values.cs" />
+    <Compile Include="Assets\Scripts\Motors\AnimationController.cs" />
+    <Compile Include="Assets\Scripts\Motors\Grab.cs" />
+    <Compile Include="Assets\Scripts\Motors\MouseFollowMotor.cs" />
+    <Compile Include="Assets\Scripts\Motors\MouseMotor.cs" />
+    <Compile Include="Assets\Scripts\Motors\SimpleMotor.cs" />
+    <Compile Include="Assets\Scripts\UIAndGoals\DumbUpdate.cs" />
+    <Compile Include="Assets\Scripts\UIAndGoals\GameStates.cs" />
+    <Compile Include="Assets\Scripts\UIAndGoals\Goal.cs" />
+    <Compile Include="Assets\Scripts\UIAndGoals\Timer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/weiyi_zhang/Documents/GitHub/PuppetOnARoll/PuppetOnARoll/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

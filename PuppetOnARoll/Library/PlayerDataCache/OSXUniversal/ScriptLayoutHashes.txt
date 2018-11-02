@@ -1,6 +1,6 @@
 OSXStandalone
 PlayerPath?
-/Users/alex_castelan/Documents/Unity/PuppetOnARollPrototype1.1b.app
+/Users/alex_castelan/Documents/Unity/PuppetOnARollPrototype1.2b.app
 SceneListBegin?
 Assets/Scenes/Prototype1.unity
 SceneListEnd?
@@ -159,10 +159,18 @@ e1ea12ca952c81d81a9a21fdf34446ed UnityEngine.HoloLens.dll:UnityEngine.EventSyste
 dfd33ff9ae3ce8d7ca1f22b475ec2387 UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.SpatialMappingRenderer
 aac9c55ae7ba4b95b852a7d9c191acd1 Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 0a006f3734181ba8b26758f0866152c0 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
-84a2a8445d66a62840b7df48acf8f2c7 Assembly-CSharp.dll:.MouseFollowMotor
+4d3c8e7674fa3c910599fa12a7fbfe97 Assembly-CSharp.dll:.MouseFollowMotor
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
 d3baf945a28bf6b4a4706c8193e7459e Assembly-CSharp.dll:.SimpleMotor
 f85ab25097870130e06e8472395b8959 Assembly-CSharp.dll:.MouseMotor
 93307bd34e39d73fd24e00ec39c25a91 Unity.TextMeshPro.dll:TMPro.TMP_SubMesh
+0461364d1c3611a705c4bb1cb5a60f48 Assembly-CSharp.dll:.Values
+0db5ab8eddaf8e1b208d7bed5c5c43db Assembly-CSharp.dll:.Ingredient
+243813c70728d8f4be6c6ddc9ad16c40 Assembly-CSharp.dll:.Goal
+503b2f027cd33e2fc2baed9911d7bf7e Assembly-CSharp.dll:.Timer
+6b7fee3ba01a16519a0154beb5edcbfe Assembly-CSharp.dll:.GameStates
+1c470302e6bb029162a2f7f5c30866d9 Assembly-CSharp.dll:.Grab
+3c41c061bf05b4fbb566dd1c269d3064 Assembly-CSharp.dll:.AnimationController
+1816710a23056d66a671dc1a9498652c Assembly-CSharp.dll:.DumbUpdate
