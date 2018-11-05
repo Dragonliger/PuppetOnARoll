@@ -1431,7 +1431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GrabPoint: {fileID: 1928647733}
   HandAnimator: {fileID: 1645026491}
-  difficult: 1
+  difficult: 0
   playing: 1
 --- !u!1 &712305549
 GameObject:
