@@ -7,6 +7,7 @@ TagManager:
   - BlueCube
   - GreenSphere
   - BrownCylinder
+  - UsedIngredient
   layers:
   - Default
   - TransparentFX

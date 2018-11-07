@@ -5,16 +5,19 @@ using UnityEngine.UI;
 
 public class Goal : MonoBehaviour {
 
-    public int Step1BC = 2;
-    public int Step2GS = 1;
-    public int Step3BC = 3;
-    public int Step4GS = 1;
-    public Text RecipeList;
     public GameStates GameGovernor;
+    public List<Text> RecipeList;
+    public List<string> IngredientsList;
+
+    private List<bool> Done = new List<bool>();
+    int index = 0;
 
     // Use this for initialization
     void Start () {
-		
+        for (int i = 0; i < RecipeList.Count; i++)
+        {
+            Done.Add(false);
+        }
 	}
 	
 	// Update is called once per frame
@@ -24,46 +27,29 @@ public class Goal : MonoBehaviour {
 
     private void OnTriggerEnter(Collider collision)
     {
-        if ((collision.gameObject.tag == "BrownCylinder") && (Step1BC > 0))
+        if (GameGovernor.isPlaying())
         {
-            Destroy(collision.gameObject);
-            Step1BC--;
-            RecipeList.text = "• " + Step1BC + " Brown Cylinders\n• 1 Green Sphere\n• 3 Blue Boxes\n• 1 Green Sphere";
-            if (Step1BC == 0)
+            foreach (string IngredientTag in IngredientsList)
             {
-                RecipeList.text = "• 1 Green Sphere\n• 3 Blue Boxes\n• 1 Green Sphere";
-            }
-        }
-        else if ((collision.gameObject.tag == "GreenSphere") && (Step2GS > 0))
-        {
-            Destroy(collision.gameObject);
-            Step2GS--;
-            RecipeList.text = "• " + Step2GS + " Green Sphere\n• 3 Blue Boxes\n• 1 Green Sphere";
-            if (Step2GS == 0)
-            {
-                RecipeList.text = "• 3 Blue Boxes\n• 1 Green Sphere";
-            }
-        }
-        else if ((collision.gameObject.tag == "BlueCube") && (Step3BC > 0))
-        {
-            Destroy(collision.gameObject);
-            Step3BC--;
-            RecipeList.text = "• " + Step3BC + " Blue Boxes\n• 1 Green Sphere";
-            if (Step3BC == 0)
-            {
-                RecipeList.text = "• 1 Green Sphere";
-            }
-        }
-        else if ((collision.gameObject.tag == "GreenSphere") && (Step4GS > 0))
-        {
-            Destroy(collision.gameObject);
-            Step4GS--;
-            RecipeList.text = "• " + Step4GS + " Green Sphere";
-            if (Step4GS == 0)
-            {
-                RecipeList.text = "";
-                // Victory screen.
-                GameGovernor.VictoryScreen();
+                if (collision.gameObject.tag == IngredientTag)
+                {
+                    foreach (Text Unit in RecipeList)
+                    {
+                        if (Unit.gameObject.tag == IngredientTag)
+                        {
+                            // Mark as used.
+                            Unit.color = Color.grey;
+                            collision.gameObject.tag = "UsedIngredient";
+                            Done[index] = true;
+                            // Confirm if victory
+                            if (!Done.Contains(false))
+                            {
+                                GameGovernor.VictoryScreen();
+                            }
+                            index++;
+                        }
+                    }
+                }
             }
 
         }

@@ -10,6 +10,7 @@ public class GameStates : MonoBehaviour {
     public GameObject PanelText;
     public GameObject VictoryScreenPrefab;
     public GameObject GameOverScreenPrefab;
+    public bool Playing = true;
 
 	// Use this for initialization
 	void Start () {
@@ -27,6 +28,7 @@ public class GameStates : MonoBehaviour {
         GrabScript.playing = false;
         TimerText.SetActive(false);
         PanelText.SetActive(false);
+        Playing = false;
     }
 
     public void StartPlay()
@@ -35,6 +37,7 @@ public class GameStates : MonoBehaviour {
         GrabScript.playing = true;
         TimerText.SetActive(true);
         PanelText.SetActive(true);
+        Playing = true;
     }
 
     public void GameOverScreen(string reason)
@@ -48,5 +51,10 @@ public class GameStates : MonoBehaviour {
     {
         StopPlay();
         VictoryScreenPrefab.SetActive(true);
+    }
+
+    public bool isPlaying()
+    {
+        return Playing;
     }
 }
