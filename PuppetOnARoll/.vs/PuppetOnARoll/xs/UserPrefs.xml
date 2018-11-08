@@ -5,16 +5,18 @@
       <File FileName="Assets/Scripts/Ingredients/Values.cs" Line="17" Column="10" />
       <File FileName="Assets/Scripts/Ingredients/Ingredient.cs" Line="31" Column="21" />
       <File FileName="Assets/Scripts/UIAndGoals/Timer.cs" Line="30" Column="1" />
-      <File FileName="Assets/Scripts/UIAndGoals/Goal.cs" Line="9" Column="28" />
+      <File FileName="Assets/Scripts/UIAndGoals/Goal.cs" Line="41" Column="53" />
       <File FileName="Assets/Scripts/Motors/MouseFollowMotor.cs" Line="123" Column="10" />
       <File FileName="Assets/Scripts/Motors/Grab.cs" Line="38" Column="10" />
-      <File FileName="Assets/Scripts/UIAndGoals/GameStates.cs" Line="12" Column="44" />
+      <File FileName="Assets/Scripts/UIAndGoals/GameStates.cs" Line="58" Column="24" />
       <File FileName="Assets/Scripts/UIAndGoals/DumbUpdate.cs" Line="18" Column="42" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/alex_castelan/Documents/GitHub/PuppetOnARoll/PuppetOnARoll/Assets/Scripts/UIAndGoals/Goal.cs" relfile="Assets/Scripts/UIAndGoals/Goal.cs" line="42" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
