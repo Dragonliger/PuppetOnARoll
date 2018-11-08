@@ -6,6 +6,7 @@ public class MouseFollowMotor : MonoBehaviour
 {
 
     public float speed = 12.0f;
+    public float DragSpeed = 1.0f;
     public float DownSpeed = 25.0f;
     public float UpSpeed = 20.0f;
     public float DefaultHeight = 6.11f;
@@ -14,14 +15,15 @@ public class MouseFollowMotor : MonoBehaviour
     public float RightInvisiwall = 20.0f;
     public float FrontInvisiwall = 16.0f;
     public float BackInvisiwall = -9.0f;
+    public bool Playing = true;
 
-    private float movingflag = 1.0f;
-    public bool flagstop = true;
+    private float RealSpeed = 0.0f;
 
     // Use this for initialization
     void Start()
     {
         Cursor.visible = false;
+        RealSpeed = speed;
     }
 
     // Update is called once per frame
@@ -32,17 +34,17 @@ public class MouseFollowMotor : MonoBehaviour
         Vector2 MousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
         Vector2 ScreenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
         float HorizontalInput = (MousePosition.x - ScreenCenter.x) / ScreenCenter.x;
-        float HorizontalSpeed = HorizontalInput * speed * Time.deltaTime;
         float VerticalInput = (MousePosition.y - ScreenCenter.y) / ScreenCenter.y;
-        float VerticalSpeed = VerticalInput * speed * Time.deltaTime;
         float YAxisMovement = 0.0f;
         float YPosition = gameObject.transform.position.y;
         float XPosition = gameObject.transform.position.x;
         float ZPosition = gameObject.transform.position.z;
 
+        // Clicking.
         // Left click to go down.
         if (Input.GetButton("Fire1"))
         {
+            RealSpeed = DragSpeed;
             if (YPosition > MinimumHeight)
             {
                 YAxisMovement = -1.0f * DownSpeed * Time.deltaTime;
@@ -54,11 +56,11 @@ public class MouseFollowMotor : MonoBehaviour
                     YAxisMovement = Difference * -1.0f;
                 }
             }
-
         }
         // When the button is released the hand goes up again.
-        else if (gameObject.transform.position.y < DefaultHeight)
+        else if (YPosition < DefaultHeight)
         {
+            RealSpeed = speed;
             YAxisMovement = 1.0f * UpSpeed * Time.deltaTime;
             // This makes the hand snap to the default position for the hand.
             float Difference = DefaultHeight - YPosition;
@@ -68,6 +70,11 @@ public class MouseFollowMotor : MonoBehaviour
             }
         }
 
+        // Speeds
+        float HorizontalSpeed = HorizontalInput * RealSpeed * Time.deltaTime;
+        float VerticalSpeed = VerticalInput * RealSpeed * Time.deltaTime;
+
+        // Collisions
         // Going left
         if(HorizontalSpeed < 0)
         {
@@ -88,7 +95,7 @@ public class MouseFollowMotor : MonoBehaviour
             }
         }
 
-        // Going down
+        // Going back
         if (VerticalSpeed < 0)
         {
             // Check back invisiwall.
@@ -96,8 +103,6 @@ public class MouseFollowMotor : MonoBehaviour
             if (Difference > VerticalSpeed)
             {
                 VerticalSpeed = Difference;
-                //if(flagstop)
-                    //movingflag = 0.0f;
             }
         }
         else
@@ -107,12 +112,14 @@ public class MouseFollowMotor : MonoBehaviour
             if (Difference < VerticalSpeed)
             {
                 VerticalSpeed = Difference;
-                if(flagstop)
-                    movingflag = 1.0f;
             }
         }
 
-        // Apply translation.
-        gameObject.transform.Translate(new Vector3(HorizontalSpeed * movingflag, YAxisMovement, VerticalSpeed));
+        if (Playing)
+        {
+            // Translation
+            // Apply translation.
+            gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
+        }
     }
 }
