@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: ce52ba69ca25944019fcac570cf06eeb
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Base
+    100002: Base_0
+    100004: Blade
+    100006: Chainsaw
+    100008: //RootNode
+    100010: Diente_001
+    100012: Diente_002
+    100014: Diente_003
+    100016: Diente_004
+    100018: Diente_005
+    100020: Diente_006
+    100022: Diente_007
+    100024: Diente_008
+    100026: Diente_009
+    100028: Diente_010
+    100030: Diente_011
+    100032: Diente_012
+    100034: Diente_013
+    100036: Diente_014
+    100038: Hoja
+    100040: Teeth_001
+    100042: Teeth_002
+    100044: Teeth_003
+    100046: Teeth_004
+    100048: Teeth_005
+    100050: Teeth_006
+    100052: Teeth_007
+    100054: Teeth_008
+    100056: Teeth_009
+    100058: Teeth_010
+    100060: Teeth_011
+    100062: Teeth_012
+    100064: Teeth_013
+    100066: Teeth_014
+    100068: Teeth_015
+    100070: Teeth_016
+    100072: Teeth_017
+    100074: Teeth_018
+    100076: Hoja_0
+    400000: Base
+    400002: Base_0
+    400004: Blade
+    400006: Chainsaw
+    400008: //RootNode
+    400010: Diente_001
+    400012: Diente_002
+    400014: Diente_003
+    400016: Diente_004
+    400018: Diente_005
+    400020: Diente_006
+    400022: Diente_007
+    400024: Diente_008
+    400026: Diente_009
+    400028: Diente_010
+    400030: Diente_011
+    400032: Diente_012
+    400034: Diente_013
+    400036: Diente_014
+    400038: Hoja
+    400040: Teeth_001
+    400042: Teeth_002
+    400044: Teeth_003
+    400046: Teeth_004
+    400048: Teeth_005
+    400050: Teeth_006
+    400052: Teeth_007
+    400054: Teeth_008
+    400056: Teeth_009
+    400058: Teeth_010
+    400060: Teeth_011
+    400062: Teeth_012
+    400064: Teeth_013
+    400066: Teeth_014
+    400068: Teeth_015
+    400070: Teeth_016
+    400072: Teeth_017
+    400074: Teeth_018
+    400076: Hoja_0
+    2100000: unnamed
+    2300000: Base
+    3300000: Base
+    4300000: Hoja
+    4300002: Diente_001
+    4300004: Diente_002
+    4300006: Diente_003
+    4300008: Diente_004
+    4300010: Diente_005
+    4300012: Diente_006
+    4300014: Diente_007
+    4300016: Diente_008
+    4300018: Diente_009
+    4300020: Diente_010
+    4300022: Diente_011
+    4300024: Diente_012
+    4300026: Diente_013
+    4300028: Diente_014
+    4300030: Base
+    7400000: Default Take
+    7400002: ChainsawAction
+    7400004: AllAnim
+    9500000: //RootNode
+    13700000: Diente_001
+    13700002: Diente_002
+    13700004: Diente_003
+    13700006: Diente_004
+    13700008: Diente_005
+    13700010: Diente_006
+    13700012: Diente_007
+    13700014: Diente_008
+    13700016: Diente_009
+    13700018: Diente_010
+    13700020: Diente_011
+    13700022: Diente_012
+    13700024: Diente_013
+    13700026: Diente_014
+    13700028: Hoja
+    13700030: Base
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
