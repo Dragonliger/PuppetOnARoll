@@ -62,6 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Animation\Chainsaw.cs" />
+    <Compile Include="Assets\Scripts\Animation\ExplosiveTeeth.cs" />
     <Compile Include="Assets\Scripts\Ingredients\Ingredient.cs" />
     <Compile Include="Assets\Scripts\Ingredients\Values.cs" />
     <Compile Include="Assets\Scripts\Motors\AnimationController.cs" />

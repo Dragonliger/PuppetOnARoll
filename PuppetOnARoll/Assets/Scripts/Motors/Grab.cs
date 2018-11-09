@@ -23,6 +23,10 @@ public class Grab : MonoBehaviour {
         {
             Touching.GetComponent<Rigidbody>().isKinematic = false;
             Touching.GetComponent<Rigidbody>().useGravity = true;
+            if(Touching.gameObject.GetComponent<Chainsaw>() != null)
+            {
+                Touching.gameObject.GetComponent<Chainsaw>().ToolDropped();
+            }
             Touching.transform.SetParent(null);
             Touching = null;
         }
@@ -43,14 +47,31 @@ public class Grab : MonoBehaviour {
 
     private void OnCollisionStay(Collision collision)
     {
-        if(Input.GetButton("Jump") && (Touching == null) && CanGrab && playing)
+
+        if (Input.GetButton("Jump") && (Touching == null) && CanGrab && playing)
         {
             Touching = collision.gameObject;
-            Touching.GetComponent<Rigidbody>().isKinematic = true;
-            Touching.GetComponent<Rigidbody>().useGravity = false;
-            //Touching.transform.position = GrabPoint.transform.position;
-            Touching.transform.SetParent(GrabPoint.transform);
-
+            if (collision.gameObject.tag == "Tool")
+            {
+                HandAnimator.SetBool("Tool", true);
+                if(collision.gameObject.GetComponent<Chainsaw>() != null)
+                {
+                    HandAnimator.SetBool("Chainsaw", true);
+                    Touching.transform.position = GrabPoint.transform.position;
+                    Touching.transform.SetParent(GrabPoint.transform);
+                    collision.gameObject.GetComponent<Chainsaw>().ToolGrabbed();
+                }
+            }
+            else
+            {
+                Touching = collision.gameObject;
+                Touching.GetComponent<Rigidbody>().isKinematic = true;
+                Touching.GetComponent<Rigidbody>().useGravity = false;
+                //Touching.transform.position = GrabPoint.transform.position;
+                Touching.transform.SetParent(GrabPoint.transform);
+            }
         }
     }
+
+
 }
