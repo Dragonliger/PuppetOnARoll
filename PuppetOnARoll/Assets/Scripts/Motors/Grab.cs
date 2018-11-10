@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour {
 
+    public Values ValueScript;
+    public MouseFollowMotor PlayerMotor;
     public GameObject GrabPoint;
     public Animator HandAnimator;
     public bool difficult = false;
@@ -11,10 +13,11 @@ public class Grab : MonoBehaviour {
 
     private bool CanGrab = true;
     private GameObject Touching = null;
+    private float TemporaryMinHeight;
 
 	// Use this for initialization
 	void Start () {
-		
+        TemporaryMinHeight = PlayerMotor.MinimumHeight;
 	}
 	
 	// Update is called once per frame
@@ -26,6 +29,7 @@ public class Grab : MonoBehaviour {
             if(Touching.gameObject.GetComponent<Chainsaw>() != null)
             {
                 Touching.gameObject.GetComponent<Chainsaw>().ToolDropped();
+                PlayerMotor.MinimumHeight = TemporaryMinHeight;
             }
             Touching.transform.SetParent(null);
             Touching = null;
@@ -41,6 +45,8 @@ public class Grab : MonoBehaviour {
         else
         {
             HandAnimator.SetBool("Close", false);
+            HandAnimator.SetBool("Chainsaw", false);
+            HandAnimator.SetBool("Tool", false);
             CanGrab = true;
         }
     }
@@ -60,6 +66,7 @@ public class Grab : MonoBehaviour {
                     Touching.transform.position = GrabPoint.transform.position;
                     Touching.transform.SetParent(GrabPoint.transform);
                     collision.gameObject.GetComponent<Chainsaw>().ToolGrabbed();
+                    PlayerMotor.MinimumHeight = ValueScript.ToolMinimumHeight;
                 }
             }
             else
