@@ -9,12 +9,14 @@ public class Chainsaw : MonoBehaviour {
     public Values ValueClass;
     public GameObject ChainsawProducer;
     public GameObject Prefab;
+    private AudioSource Sonido;
 
     private float CullingHeight;
 
     // Use this for initialization
     void Start () {
         CullingHeight = ValueClass.CullingHeight;
+        Sonido = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -46,6 +48,7 @@ public class Chainsaw : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().useGravity = false;
         gameObject.GetComponent<Collider>().enabled = false;
         gameObject.transform.eulerAngles = new Vector3(-1.5f, 88.0f, -89.0f);
+        Sonido.Play();
     }
 
     public void ToolDropped()
@@ -58,5 +61,6 @@ public class Chainsaw : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
         gameObject.GetComponent<Rigidbody>().useGravity = true;
         gameObject.GetComponent<Collider>().enabled = true;
+        Sonido.Stop();
     }
 }
