@@ -44,7 +44,7 @@ public class MouseFollowMotor : MonoBehaviour
 
         // Clicking.
         // Left click to go down.
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("GoDown"))
         {
             RealSpeed = DragSpeed;
             if (YPosition > MinimumHeight)

@@ -22,7 +22,7 @@ public class Grab : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if ((Touching != null) && Input.GetButtonUp("Jump") && playing)
+        if ((Touching != null) && Input.GetButtonUp("Grab") && playing)
         {
             Touching.GetComponent<Rigidbody>().isKinematic = false;
             Touching.GetComponent<Rigidbody>().useGravity = true;
@@ -34,7 +34,7 @@ public class Grab : MonoBehaviour {
             Touching.transform.SetParent(null);
             Touching = null;
         }
-        if (Input.GetButton("Jump") && playing)
+        if (Input.GetButton("Grab") && playing)
         {
             HandAnimator.SetBool("Close", true);
             if(Touching == null && difficult)
@@ -54,7 +54,7 @@ public class Grab : MonoBehaviour {
     private void OnCollisionStay(Collision collision)
     {
 
-        if (Input.GetButton("Jump") && (Touching == null) && CanGrab && playing)
+        if (Input.GetButton("Grab") && (Touching == null) && CanGrab && playing)
         {
             Touching = collision.gameObject;
             if (collision.gameObject.tag == "Tool")
