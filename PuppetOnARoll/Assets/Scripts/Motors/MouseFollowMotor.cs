@@ -16,6 +16,8 @@ public class MouseFollowMotor : MonoBehaviour
     public float FrontInvisiwall = 16.0f;
     public float BackInvisiwall = -9.0f;
     public bool Playing = true;
+    public GameObject ResetPoint;
+    public float ReturnSpeed = 6.0f;
 
     private float RealSpeed = 0.0f;
 
@@ -120,6 +122,14 @@ public class MouseFollowMotor : MonoBehaviour
             // Translation
             // Apply translation.
             gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
+        }
+        else
+        {
+            if (transform.position != ResetPoint.transform.position)
+            {
+                //Go back to center.
+                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, ResetPoint.transform.position, ReturnSpeed * Time.deltaTime);
+            }
         }
     }
 }
