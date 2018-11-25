@@ -10,7 +10,7 @@
       <File FileName="Assets/Scripts/Tool/Tool.cs" Line="16" Column="3" />
       <File FileName="Assets/Scripts/Ingredients/Values.cs" Line="36" Column="38" />
       <File FileName="Assets/Scripts/UIAndGoals/Timer.cs" Line="44" Column="14" />
-      <File FileName="Assets/Scripts/UIAndGoals/Countdown.cs" Line="7" Column="6" />
+      <File FileName="Assets/Scripts/UIAndGoals/Countdown.cs" Line="22" Column="35" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
