@@ -29,7 +29,8 @@ public class Ingredient : MonoBehaviour {
     {
         if(gameObject.transform.position.y <= CullingHeight)
         {
-            ValueClass.Decrease(gameObject.tag);
+            // Avoiding ingredientless game over
+            //ValueClass.Decrease(gameObject.tag);
             Destroy(gameObject);
         }
     }

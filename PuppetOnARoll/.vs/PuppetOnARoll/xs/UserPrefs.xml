@@ -1,9 +1,22 @@
 ﻿<Properties StartupConfiguration="{1E2EB022-421A-8C98-8384-5067777E1AC6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Motors/Grab.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ingredients/Values.cs">
     <Files>
-      <File FileName="Assets/Scripts/Motors/MouseFollowMotor.cs" Line="47" Column="36" />
-      <File FileName="Assets/Scripts/Motors/Grab.cs" Line="37" Column="34" />
+      <File FileName="Assets/Scripts/Motors/MouseFollowMotor.cs" Line="43" Column="59" />
+      <File FileName="Assets/Scripts/Motors/Grab.cs" Line="29" Column="57" />
+      <File FileName="Assets/Scripts/UIAndGoals/GameStates.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/UIAndGoals/DumbUpdate.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Ingredients/Ingredient.cs" Line="32" Column="49" />
+      <File FileName="Assets/Scripts/Animation/Chainsaw.cs" Line="13" Column="32" />
+      <File FileName="Assets/Scripts/Tool/Tool.cs" Line="32" Column="69" />
+      <File FileName="Assets/Scripts/Ingredients/Values.cs" Line="21" Column="15" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>Prefab</Value>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

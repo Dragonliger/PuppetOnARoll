@@ -21,7 +21,7 @@ public class Chainsaw : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        DestroyBelowCullingHeight();
+
     }
 
     void DestroyBelowCullingHeight()
