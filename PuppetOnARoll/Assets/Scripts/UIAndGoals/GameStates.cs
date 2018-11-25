@@ -24,7 +24,7 @@ public class GameStates : MonoBehaviour {
 
     public void StopPlay()
     {
-        gameObject.GetComponent<MouseFollowMotor>().Playing = false;
+        gameObject.GetComponent<Values>().Playing = false;
         GrabScript.playing = false;
         TimerText.SetActive(false);
         PanelText.SetActive(false);
@@ -33,7 +33,7 @@ public class GameStates : MonoBehaviour {
 
     public void StartPlay()
     {
-        gameObject.GetComponent<MouseFollowMotor>().Playing = true;
+        gameObject.GetComponent<Values> ().Playing = true;
         GrabScript.playing = true;
         TimerText.SetActive(true);
         PanelText.SetActive(true);
