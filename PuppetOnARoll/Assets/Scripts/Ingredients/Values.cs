@@ -33,6 +33,7 @@ public class Values : MonoBehaviour {
     public bool Playing = true;
     public GameObject ResetPoint;
     public float ReturnSpeed = 6.0f;
+    public float TimerStart = 180.0f;
 
     public void Decrease(string Tag)
     {

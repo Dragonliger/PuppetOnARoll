@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ingredient : MonoBehaviour {
 
     public Values ValueClass;
+    public GameObject Instantiator;
 
     private float CullingHeight;
     private float Countdown;
@@ -31,7 +32,11 @@ public class Ingredient : MonoBehaviour {
         {
             // Avoiding ingredientless game over
             //ValueClass.Decrease(gameObject.tag);
-            Destroy(gameObject);
+            //Destroy(gameObject);
+            transform.position = Instantiator.transform.position;
+            transform.eulerAngles = new Vector3(0.0f, 0.0f, 24.0f);
+            gameObject.GetComponent<Rigidbody>().velocity = Vector3.zero;
+            gameObject.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
     }
 

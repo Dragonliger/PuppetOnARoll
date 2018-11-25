@@ -2769,6 +2769,7 @@ MonoBehaviour:
   ValueClass: {fileID: 0}
   ChainsawProducer: {fileID: 0}
   Prefab: {fileID: 1605335348767552}
+  changeFrontWall: 16.7
 --- !u!114 &114236003614861758
 MonoBehaviour:
   m_ObjectHideFlags: 1
