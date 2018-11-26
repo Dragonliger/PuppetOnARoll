@@ -5,10 +5,14 @@ using UnityEngine;
 public class Values : MonoBehaviour {
 
     public float CullingHeight = -1.0f;
+<<<<<<< HEAD
+=======
+    public int BrownCylinders = 10;
+    public int GreenSpheres = 5;
+    public int BlueCubes = 12;
+>>>>>>> parent of c32c382... PrototypeDone
     public GameStates GameGovernor;
     public float ChainsawTeethForce = 1.0f;
-    public float ToolMinimumHeight = 2.0f;
-    public float CuttingCountDown = 1.0f;
 
     //Legacy counters, consider deleting.
     int BrownCylinders = 10;
@@ -62,24 +66,6 @@ public class Values : MonoBehaviour {
         {
             BrownCylinders--;
             if (BrownCylinders < 1)
-            {
-                // Launch Game Over.
-                GameGovernor.GameOverScreen("Not enough ingredients.");
-            }
-        }
-        else if(Tag == "MegaBlueCube")
-        {
-            MegaBlueCubes--;
-            if (MegaBlueCubes < 1)
-            {
-                // Launch Game Over.
-                GameGovernor.GameOverScreen("Not enough ingredients.");
-            }
-        }
-        else if (Tag == "MegaBrownCylinder")
-        {
-            MegaBrownCylinders--;
-            if (MegaBrownCylinders < 1)
             {
                 // Launch Game Over.
                 GameGovernor.GameOverScreen("Not enough ingredients.");

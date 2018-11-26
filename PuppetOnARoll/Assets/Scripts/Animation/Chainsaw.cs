@@ -6,6 +6,7 @@ public class Chainsaw : MonoBehaviour {
 
     public Animator ChainsawAnimator;
     public List<Collider> SawTeeth = new List<Collider>();
+<<<<<<< HEAD
     public Values ValueClass;
     public GameObject ChainsawProducer;
     public GameObject Prefab;
@@ -20,24 +21,22 @@ public class Chainsaw : MonoBehaviour {
         CullingHeight = ValueClass.CullingHeight;
         Sonido = gameObject.GetComponent<AudioSource>();
         frontWall = ValueClass.FrontInvisiwall;
+=======
+
+    // Use this for initialization
+    void Start () {
+
+>>>>>>> parent of c32c382... PrototypeDone
     }
 
     // Update is called once per frame
     void Update () {
+<<<<<<< HEAD
 
     }
+=======
+>>>>>>> parent of c32c382... PrototypeDone
 
-    void DestroyBelowCullingHeight()
-    {
-        if (gameObject.transform.position.y <= CullingHeight)
-        {
-            GameObject TempChainsaw = Instantiate(Prefab, ChainsawProducer.transform.position, Quaternion.identity);
-            TempChainsaw.transform.eulerAngles = new Vector3(0.0f, 0.0f, 24.0f);
-            TempChainsaw.GetComponent<Chainsaw>().ValueClass = ValueClass;
-            TempChainsaw.GetComponent<Chainsaw>().ChainsawProducer = ChainsawProducer;
-            TempChainsaw.GetComponent<Chainsaw>().Prefab = Prefab;
-            Destroy(gameObject);
-        }
     }
 
     public void ToolGrabbed()

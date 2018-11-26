@@ -5,6 +5,7 @@ using UnityEngine;
 public class MouseFollowMotor : MonoBehaviour
 {
 
+<<<<<<< HEAD
     //public float speed = 12.0f;
     //public float DragSpeed = 1.0f;
     //public float DownSpeed = 25.0f;
@@ -18,6 +19,19 @@ public class MouseFollowMotor : MonoBehaviour
     //public bool Playing = true;
     //public GameObject ResetPoint;
     //public float ReturnSpeed = 6.0f;
+=======
+    public float speed = 12.0f;
+    public float DragSpeed = 1.0f;
+    public float DownSpeed = 25.0f;
+    public float UpSpeed = 20.0f;
+    public float DefaultHeight = 6.11f;
+    public float MinimumHeight = 2.6f;
+    public float LeftInvisiwall = -20.0f;
+    public float RightInvisiwall = 20.0f;
+    public float FrontInvisiwall = 16.0f;
+    public float BackInvisiwall = -9.0f;
+    public bool Playing = true;
+>>>>>>> parent of c32c382... PrototypeDone
 
     private Values ValueClass;
     private float RealSpeed = 0.0f;
@@ -129,6 +143,7 @@ public class MouseFollowMotor : MonoBehaviour
             // Apply translation.
             gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
         }
+<<<<<<< HEAD
         else
         {
             if (transform.position != ValueClass.ResetPoint.transform.position)
@@ -137,5 +152,7 @@ public class MouseFollowMotor : MonoBehaviour
                 gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, ValueClass.ResetPoint.transform.position, ValueClass.ReturnSpeed * Time.deltaTime);
             }
         }
+=======
+>>>>>>> parent of c32c382... PrototypeDone
     }
 }
