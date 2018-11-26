@@ -27,15 +27,15 @@ public class Goal : MonoBehaviour {
 		
 	}
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (GameGovernor.isPlaying())
         {
-            if(collision.CompareTag("Rice"))
+            if(collision.gameObject.CompareTag("Rice"))
             {
                 GoalGovernor.GoalMet(0, true, 1, "Grab the chainsaw", false);
             }
-            if(collision.CompareTag("Cucumber"))
+            if(collision.gameObject.CompareTag("Cucumber"))
             {
                 GoalGovernor.GoalMet(3, true, 4, "You win", true);
             }

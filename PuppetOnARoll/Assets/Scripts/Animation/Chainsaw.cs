@@ -12,7 +12,7 @@ public class Chainsaw : MonoBehaviour {
     public float changeFrontWall;
     private AudioSource Sonido;
     private float frontWall;
-    GoalManager GoalGovernor;
+    public GoalManager GoalGovernor;
 
     private float CullingHeight;
 

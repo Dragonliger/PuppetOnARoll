@@ -32,16 +32,21 @@ public class GoalManager : MonoBehaviour {
             if(GoalAchieved)
             {
                 GoalsAchieved++;
+                GoalCheckbox.isOn = true;
+                GoalText.color = Color.green;
             }
             else
             {
                 GoalsFailed++;
+                GoalCheckbox.isOn = true;
+                GoalText.color = Color.red;
             }
             CurrentGoalCode = NextGoalIndex;
             GNextGoalText = NextGoalText;
-            Invoke("ChangeGoalText", 2);
+            Invoke("ChangeGoalText", 1);
             if(EndGame)
             {
+                GameGovernor.VictoryScreen();
                 //trigger victory screen er something.
             }
         }
@@ -50,6 +55,7 @@ public class GoalManager : MonoBehaviour {
     public void ChangeGoalText()
     {
         GoalText.text = GNextGoalText;
-
+        GoalCheckbox.isOn = false;
+        GoalText.color = Color.black;
     }
 }

@@ -7,10 +7,11 @@ public class GameStates : MonoBehaviour {
 
     public Grab GrabScript;
     public GameObject TimerText;
-    public GameObject PanelText;
+    //public GameObject PanelText;
     public GameObject VictoryScreenPrefab;
     public GameObject GameOverScreenPrefab;
     public bool Playing = true;
+    public GameObject RecipeInstructions;
 
 	// Use this for initialization
 	void Start () {
@@ -27,7 +28,7 @@ public class GameStates : MonoBehaviour {
         gameObject.GetComponent<Values>().Playing = false;
         GrabScript.playing = false;
         TimerText.SetActive(false);
-        PanelText.SetActive(false);
+        //PanelText.SetActive(false);
         Playing = false;
     }
 
@@ -36,7 +37,7 @@ public class GameStates : MonoBehaviour {
         gameObject.GetComponent<Values> ().Playing = true;
         GrabScript.playing = true;
         TimerText.SetActive(true);
-        PanelText.SetActive(true);
+        //PanelText.SetActive(true);
         Playing = true;
     }
 
@@ -51,6 +52,7 @@ public class GameStates : MonoBehaviour {
     {
         StopPlay();
         VictoryScreenPrefab.SetActive(true);
+        RecipeInstructions.SetActive(false);
     }
 
     public bool isPlaying()
