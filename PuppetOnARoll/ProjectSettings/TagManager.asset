@@ -12,6 +12,7 @@ TagManager:
   - MegaBlueCube
   - MegaGreenSphere
   - MegaBrownCylinder
+  - Rice
   layers:
   - Default
   - TransparentFX
