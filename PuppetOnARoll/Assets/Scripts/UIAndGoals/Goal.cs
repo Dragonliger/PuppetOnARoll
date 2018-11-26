@@ -6,18 +6,20 @@ using UnityEngine.UI;
 public class Goal : MonoBehaviour {
 
     public GameStates GameGovernor;
-    public List<Text> RecipeList;
-    public List<string> IngredientsList;
+    //    public List<Text> RecipeList;
+    //    public List<string> IngredientsList;
+    public GoalManager GoalGovernor;
 
-    private List<bool> Done = new List<bool>();
-    int index = 0;
+    //    private List<bool> Done = new List<bool>();
+    //    int index = 0;
 
     // Use this for initialization
-    void Start () {
-        for (int i = 0; i < RecipeList.Count; i++)
-        {
-            Done.Add(false);
-        }
+    void Start()
+    {
+        //     for (int i = 0; i < RecipeList.Count; i++)
+        //     {
+        //        Done.Add(false);
+        //     }
 	}
 	
 	// Update is called once per frame
@@ -29,31 +31,15 @@ public class Goal : MonoBehaviour {
     {
         if (GameGovernor.isPlaying())
         {
-            foreach (string IngredientTag in IngredientsList)
+            if(collision.CompareTag("Rice"))
             {
-                if (collision.gameObject.tag == IngredientTag)
-                {
-                    foreach (Text Unit in RecipeList)
-                    {
-                        if (Unit.gameObject.tag == IngredientTag)
-                        {
-                            // Mark as used.
-                            Unit.color = Color.grey;
-                            collision.gameObject.tag = "UsedIngredient";
-                            Done[index] = true;
-                            // Confirm if victory
-                            if (!Done.Contains(false))
-                            {
-                                GameGovernor.VictoryScreen();
-                            }
-                            index++;
-                            IngredientsList.Remove(IngredientTag);
-                            break;
-                        }
-                    }
-                }
+                GoalGovernor.GoalMet(0, true, 1, "Grab the chainsaw", false);
             }
-
+            if(collision.CompareTag("Cucumber"))
+            {
+                GoalGovernor.GoalMet(3, true, 4, "You win", true);
+            }
         }
+
     }
 }

@@ -75,6 +75,7 @@
     <Compile Include="Assets\Scripts\UIAndGoals\DumbUpdate.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\GameStates.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\Goal.cs" />
+    <Compile Include="Assets\Scripts\UIAndGoals\GoalManager.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\Timer.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>/Users/alex_castelan/Documents/GitHub/PuppetOnARoll/PuppetOnARoll/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

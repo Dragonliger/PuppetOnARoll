@@ -13,6 +13,7 @@ TagManager:
   - MegaGreenSphere
   - MegaBrownCylinder
   - Rice
+  - Cucumber
   layers:
   - Default
   - TransparentFX

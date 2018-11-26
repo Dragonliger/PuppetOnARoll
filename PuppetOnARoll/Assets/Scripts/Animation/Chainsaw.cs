@@ -12,6 +12,7 @@ public class Chainsaw : MonoBehaviour {
     public float changeFrontWall;
     private AudioSource Sonido;
     private float frontWall;
+    GoalManager GoalGovernor;
 
     private float CullingHeight;
 
@@ -53,6 +54,7 @@ public class Chainsaw : MonoBehaviour {
         gameObject.transform.eulerAngles = new Vector3(-1.5f, 88.0f, -89.0f);
         ValueClass.FrontInvisiwall = changeFrontWall;
         Sonido.Play();
+        GoalGovernor.GoalMet(1, true, 2, "Cut the Cucumber", false);
     }
 
     public void ToolDropped()

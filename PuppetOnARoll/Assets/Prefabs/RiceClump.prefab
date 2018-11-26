@@ -627,6 +627,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 0}
   Instantiator: {fileID: 1243450345938802}
+  Active: 1
 --- !u!114 &114473226546646552
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -640,6 +641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 0}
   Instantiator: {fileID: 1243450345938802}
+  Active: 1
 --- !u!114 &114523703197158864
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -653,6 +655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 0}
   Instantiator: {fileID: 1243450345938802}
+  Active: 1
 --- !u!114 &114608055304666828
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -666,6 +669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 0}
   Instantiator: {fileID: 1243450345938802}
+  Active: 1
 --- !u!114 &114678570426870084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -679,6 +683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 0}
   Instantiator: {fileID: 1243450345938802}
+  Active: 1
 --- !u!114 &114874506036512412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -692,6 +697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 0}
   Instantiator: {fileID: 1243450345938802}
+  Active: 1
 --- !u!135 &135049901895562494
 SphereCollider:
   m_ObjectHideFlags: 1

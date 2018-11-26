@@ -1,0 +1,209 @@
+fileFormatVersion: 2
+guid: 53fbdeaa8f85e40e78da68ad981e3ef5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: botella:group1
+    100002: botella:pCylinder5
+    100004: botella:pCylinder6
+    100006: bowl1:polySurface1
+    100008: bowl:polySurface1
+    100010: cap1
+    100012: cap2
+    100014: cup1:polySurface1
+    100016: Cutlery
+    100018: ESCUDO:pCube10
+    100020: ESCUDO:pCube8
+    100022: fork
+    100024: group
+    100026: //RootNode
+    100028: PAPELERA_ROSA:papelera_nueva:pCylinder15
+    100030: pCube1
+    100032: pCube2
+    100034: pCylinder1
+    100036: plate1
+    100038: pot1
+    100040: pSphere4
+    100042: rice_clump:polySurface1
+    100044: soy1:pCylinder5
+    100046: spoon2:polySurface1
+    100048: spoon:pSphere6
+    100050: transform1
+    100052: transform2
+    400000: botella:group1
+    400002: botella:pCylinder5
+    400004: botella:pCylinder6
+    400006: bowl1:polySurface1
+    400008: bowl:polySurface1
+    400010: cap1
+    400012: cap2
+    400014: cup1:polySurface1
+    400016: Cutlery
+    400018: ESCUDO:pCube10
+    400020: ESCUDO:pCube8
+    400022: fork
+    400024: group
+    400026: //RootNode
+    400028: PAPELERA_ROSA:papelera_nueva:pCylinder15
+    400030: pCube1
+    400032: pCube2
+    400034: pCylinder1
+    400036: plate1
+    400038: pot1
+    400040: pSphere4
+    400042: rice_clump:polySurface1
+    400044: soy1:pCylinder5
+    400046: spoon2:polySurface1
+    400048: spoon:pSphere6
+    400050: transform1
+    400052: transform2
+    2100000: lambert1
+    2100002: spoon_pSphere2SG1
+    2100004: spoon_initialShadingGroup1
+    2100006: blinn1
+    2100008: blinn4
+    2100010: blinn2
+    2100012: botella_blinn10
+    2100014: blinn5
+    2100016: ESCUDO_blinn1
+    2100018: blinn3
+    2300000: botella:pCylinder5
+    2300002: botella:pCylinder6
+    2300004: bowl1:polySurface1
+    2300006: bowl:polySurface1
+    2300008: cap1
+    2300010: cap2
+    2300012: cup1:polySurface1
+    2300014: ESCUDO:pCube10
+    2300016: ESCUDO:pCube8
+    2300018: fork
+    2300020: PAPELERA_ROSA:papelera_nueva:pCylinder15
+    2300022: pCylinder1
+    2300024: plate1
+    2300026: pot1
+    2300028: pSphere4
+    2300030: rice_clump:polySurface1
+    2300032: soy1:pCylinder5
+    2300034: spoon2:polySurface1
+    2300036: spoon:pSphere6
+    3300000: botella:pCylinder5
+    3300002: botella:pCylinder6
+    3300004: bowl1:polySurface1
+    3300006: bowl:polySurface1
+    3300008: cap1
+    3300010: cap2
+    3300012: cup1:polySurface1
+    3300014: ESCUDO:pCube10
+    3300016: ESCUDO:pCube8
+    3300018: fork
+    3300020: PAPELERA_ROSA:papelera_nueva:pCylinder15
+    3300022: pCylinder1
+    3300024: plate1
+    3300026: pot1
+    3300028: pSphere4
+    3300030: rice_clump:polySurface1
+    3300032: soy1:pCylinder5
+    3300034: spoon2:polySurface1
+    3300036: spoon:pSphere6
+    4300000: plate1
+    4300002: fork
+    4300004: pSphere4
+    4300006: cap1
+    4300008: cap2
+    4300010: soy1:pCylinder5
+    4300012: rice_clump:polySurface1
+    4300014: pot1
+    4300016: spoon2:polySurface1
+    4300018: bowl:polySurface1
+    4300020: cup1:polySurface1
+    4300022: bowl1:polySurface1
+    4300024: spoon:pSphere6
+    4300026: botella:pCylinder6
+    4300028: botella:pCylinder5
+    4300030: ESCUDO:pCube8
+    4300032: pCylinder1
+    4300034: ESCUDO:pCube10
+    4300036: PAPELERA_ROSA:papelera_nueva:pCylinder15
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

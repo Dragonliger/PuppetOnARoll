@@ -6,6 +6,8 @@ public class Ingredient : MonoBehaviour {
 
     public Values ValueClass;
     public GameObject Instantiator;
+    public bool Active = false;
+    public GoalManager GoalGovernor;
 
     private float CullingHeight;
     private float Countdown;
@@ -28,7 +30,7 @@ public class Ingredient : MonoBehaviour {
 
     void DestroyBelowCullingHeight()
     {
-        if(gameObject.transform.position.y <= CullingHeight)
+        if((gameObject.transform.position.y <= CullingHeight) && Active)
         {
             // Avoiding ingredientless game over
             //ValueClass.Decrease(gameObject.tag);
@@ -59,16 +61,19 @@ public class Ingredient : MonoBehaviour {
                 Destroy(gameObject);
             }
             Countdown = ValueClass.CuttingCountDown + .01f;
+            if(gameObject.CompareTag("Cucumber"))
+            {
+                GoalGovernor.GoalMet(2, true, 3, "Place cucumber on rice", false);
+            }
         }
     }
 
     public void ActivateCollisions()
     {
-
-            Rigidbody TempRigidBody = gameObject.GetComponent<Rigidbody>();
-            TempRigidBody.isKinematic = false;
-            TempRigidBody.useGravity = true;
-            gameObject.GetComponent<Collider>().enabled = true;
-
+        Rigidbody TempRigidBody = gameObject.GetComponent<Rigidbody>();
+        TempRigidBody.isKinematic = false;
+        TempRigidBody.useGravity = true;
+        gameObject.GetComponent<Collider>().enabled = true;
+        gameObject.GetComponent<Ingredient>().Active = true;
     }
 }
