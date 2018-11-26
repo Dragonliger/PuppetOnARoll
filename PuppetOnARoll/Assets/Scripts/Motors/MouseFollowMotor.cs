@@ -5,6 +5,21 @@ using UnityEngine;
 public class MouseFollowMotor : MonoBehaviour
 {
 
+<<<<<<< HEAD
+    //public float speed = 12.0f;
+    //public float DragSpeed = 1.0f;
+    //public float DownSpeed = 25.0f;
+    //public float UpSpeed = 20.0f;
+    //public float DefaultHeight = 6.11f;
+    //public float MinimumHeight = 2.6f;
+    //public float LeftInvisiwall = -20.0f;
+    //public float RightInvisiwall = 20.0f;
+    //public float FrontInvisiwall = 16.0f;
+    //public float BackInvisiwall = -9.0f;
+    //public bool Playing = true;
+    //public GameObject ResetPoint;
+    //public float ReturnSpeed = 6.0f;
+=======
     public float speed = 12.0f;
     public float DragSpeed = 1.0f;
     public float DownSpeed = 25.0f;
@@ -16,16 +31,21 @@ public class MouseFollowMotor : MonoBehaviour
     public float FrontInvisiwall = 16.0f;
     public float BackInvisiwall = -9.0f;
     public bool Playing = true;
-    public GameObject ResetPoint;
-    public float ReturnSpeed = 6.0f;
+>>>>>>> parent of c32c382... PrototypeDone
 
+    private Values ValueClass;
     private float RealSpeed = 0.0f;
+
+    private void Awake()
+    {
+        ValueClass = gameObject.GetComponent<Values>();
+    }
 
     // Use this for initialization
     void Start()
     {
         Cursor.visible = false;
-        RealSpeed = speed;
+        RealSpeed = ValueClass.speed;
     }
 
     // Update is called once per frame
@@ -44,15 +64,15 @@ public class MouseFollowMotor : MonoBehaviour
 
         // Clicking.
         // Left click to go down.
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("GoDown"))
         {
-            RealSpeed = DragSpeed;
-            if (YPosition > MinimumHeight)
+            RealSpeed = ValueClass.DragSpeed;
+            if (YPosition > ValueClass.MinimumHeight)
             {
-                YAxisMovement = -1.0f * DownSpeed * Time.deltaTime;
+                YAxisMovement = -1.0f * ValueClass.DownSpeed * Time.deltaTime;
                 // This makes the hand snap to the lower limit instead of
                 // going through it.
-                float Difference = YPosition - MinimumHeight;
+                float Difference = YPosition - ValueClass.MinimumHeight;
                 if (-YAxisMovement > Difference)
                 {
                     YAxisMovement = Difference * -1.0f;
@@ -60,12 +80,12 @@ public class MouseFollowMotor : MonoBehaviour
             }
         }
         // When the button is released the hand goes up again.
-        else if (YPosition < DefaultHeight)
+        else if (YPosition < ValueClass.DefaultHeight)
         {
-            RealSpeed = speed;
-            YAxisMovement = 1.0f * UpSpeed * Time.deltaTime;
+            RealSpeed = ValueClass.speed;
+            YAxisMovement = 1.0f * ValueClass.UpSpeed * Time.deltaTime;
             // This makes the hand snap to the default position for the hand.
-            float Difference = DefaultHeight - YPosition;
+            float Difference = ValueClass.DefaultHeight - YPosition;
             if (YAxisMovement > Difference)
             {
                 YAxisMovement = Difference;
@@ -81,7 +101,7 @@ public class MouseFollowMotor : MonoBehaviour
         if(HorizontalSpeed < 0)
         {
             // Check left invisiwall.
-            float Difference = LeftInvisiwall - XPosition;
+            float Difference = ValueClass.LeftInvisiwall - XPosition;
             if(Difference > HorizontalSpeed)
             {
                 HorizontalSpeed = Difference;
@@ -90,7 +110,7 @@ public class MouseFollowMotor : MonoBehaviour
         else
         {
             // Check right invisiwall.
-            float Difference = RightInvisiwall - XPosition;
+            float Difference = ValueClass.RightInvisiwall - XPosition;
             if (Difference < HorizontalSpeed)
             {
                 HorizontalSpeed = Difference;
@@ -101,7 +121,7 @@ public class MouseFollowMotor : MonoBehaviour
         if (VerticalSpeed < 0)
         {
             // Check back invisiwall.
-            float Difference = BackInvisiwall - ZPosition;
+            float Difference = ValueClass.BackInvisiwall - ZPosition;
             if (Difference > VerticalSpeed)
             {
                 VerticalSpeed = Difference;
@@ -110,26 +130,29 @@ public class MouseFollowMotor : MonoBehaviour
         else
         {
             // Check front invisiwall.
-            float Difference = FrontInvisiwall - ZPosition;
+            float Difference = ValueClass.FrontInvisiwall - ZPosition;
             if (Difference < VerticalSpeed)
             {
                 VerticalSpeed = Difference;
             }
         }
 
-        if (Playing)
+        if (ValueClass.Playing)
         {
             // Translation
             // Apply translation.
             gameObject.transform.Translate(new Vector3(HorizontalSpeed, YAxisMovement, VerticalSpeed));
         }
+<<<<<<< HEAD
         else
         {
-            if (transform.position != ResetPoint.transform.position)
+            if (transform.position != ValueClass.ResetPoint.transform.position)
             {
                 //Go back to center.
-                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, ResetPoint.transform.position, ReturnSpeed * Time.deltaTime);
+                gameObject.transform.position = Vector3.MoveTowards(gameObject.transform.position, ValueClass.ResetPoint.transform.position, ValueClass.ReturnSpeed * Time.deltaTime);
             }
         }
+=======
+>>>>>>> parent of c32c382... PrototypeDone
     }
 }

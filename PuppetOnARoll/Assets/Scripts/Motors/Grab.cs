@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Grab : MonoBehaviour {
 
-    public Values ValueScript;
-    public MouseFollowMotor PlayerMotor;
+<<<<<<< HEAD
+    public Values ValueClass;
+=======
+>>>>>>> parent of c32c382... PrototypeDone
     public GameObject GrabPoint;
     public Animator HandAnimator;
     public bool difficult = false;
@@ -13,28 +15,34 @@ public class Grab : MonoBehaviour {
 
     private bool CanGrab = true;
     private GameObject Touching = null;
-    private float TemporaryMinHeight;
 
 	// Use this for initialization
 	void Start () {
-        TemporaryMinHeight = PlayerMotor.MinimumHeight;
+<<<<<<< HEAD
+        TemporaryMinHeight = ValueClass.MinimumHeight;
+=======
+		
+>>>>>>> parent of c32c382... PrototypeDone
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if ((Touching != null) && Input.GetButtonUp("Jump") && playing)
+        if ((Touching != null) && Input.GetButtonUp("Grab") && playing)
         {
             Touching.GetComponent<Rigidbody>().isKinematic = false;
             Touching.GetComponent<Rigidbody>().useGravity = true;
             if(Touching.gameObject.GetComponent<Chainsaw>() != null)
             {
                 Touching.gameObject.GetComponent<Chainsaw>().ToolDropped();
-                PlayerMotor.MinimumHeight = TemporaryMinHeight;
+<<<<<<< HEAD
+                ValueClass.MinimumHeight = TemporaryMinHeight;
+=======
+>>>>>>> parent of c32c382... PrototypeDone
             }
             Touching.transform.SetParent(null);
             Touching = null;
         }
-        if (Input.GetButton("Jump") && playing)
+        if (Input.GetButton("Grab") && playing)
         {
             HandAnimator.SetBool("Close", true);
             if(Touching == null && difficult)
@@ -45,8 +53,6 @@ public class Grab : MonoBehaviour {
         else
         {
             HandAnimator.SetBool("Close", false);
-            HandAnimator.SetBool("Chainsaw", false);
-            HandAnimator.SetBool("Tool", false);
             CanGrab = true;
         }
     }
@@ -54,7 +60,7 @@ public class Grab : MonoBehaviour {
     private void OnCollisionStay(Collision collision)
     {
 
-        if (Input.GetButton("Jump") && (Touching == null) && CanGrab && playing)
+        if (Input.GetButton("Grab") && (Touching == null) && CanGrab && playing)
         {
             Touching = collision.gameObject;
             if (collision.gameObject.tag == "Tool")
@@ -66,7 +72,10 @@ public class Grab : MonoBehaviour {
                     Touching.transform.position = GrabPoint.transform.position;
                     Touching.transform.SetParent(GrabPoint.transform);
                     collision.gameObject.GetComponent<Chainsaw>().ToolGrabbed();
-                    PlayerMotor.MinimumHeight = ValueScript.ToolMinimumHeight;
+<<<<<<< HEAD
+                    ValueClass.MinimumHeight = ValueClass.ToolMinimumHeight;
+=======
+>>>>>>> parent of c32c382... PrototypeDone
                 }
             }
             else

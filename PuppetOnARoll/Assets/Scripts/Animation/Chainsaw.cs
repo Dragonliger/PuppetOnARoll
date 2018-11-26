@@ -6,10 +6,13 @@ public class Chainsaw : MonoBehaviour {
 
     public Animator ChainsawAnimator;
     public List<Collider> SawTeeth = new List<Collider>();
+<<<<<<< HEAD
     public Values ValueClass;
     public GameObject ChainsawProducer;
     public GameObject Prefab;
+    public float changeFrontWall;
     private AudioSource Sonido;
+    private float frontWall;
 
     private float CullingHeight;
 
@@ -17,24 +20,23 @@ public class Chainsaw : MonoBehaviour {
     void Start () {
         CullingHeight = ValueClass.CullingHeight;
         Sonido = gameObject.GetComponent<AudioSource>();
+        frontWall = ValueClass.FrontInvisiwall;
+=======
+
+    // Use this for initialization
+    void Start () {
+
+>>>>>>> parent of c32c382... PrototypeDone
     }
 
     // Update is called once per frame
     void Update () {
-        DestroyBelowCullingHeight();
-    }
+<<<<<<< HEAD
 
-    void DestroyBelowCullingHeight()
-    {
-        if (gameObject.transform.position.y <= CullingHeight)
-        {
-            GameObject TempChainsaw = Instantiate(Prefab, ChainsawProducer.transform.position, Quaternion.identity);
-            TempChainsaw.transform.eulerAngles = new Vector3(0.0f, 0.0f, 24.0f);
-            TempChainsaw.GetComponent<Chainsaw>().ValueClass = ValueClass;
-            TempChainsaw.GetComponent<Chainsaw>().ChainsawProducer = ChainsawProducer;
-            TempChainsaw.GetComponent<Chainsaw>().Prefab = Prefab;
-            Destroy(gameObject);
-        }
+    }
+=======
+>>>>>>> parent of c32c382... PrototypeDone
+
     }
 
     public void ToolGrabbed()
@@ -48,6 +50,7 @@ public class Chainsaw : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().useGravity = false;
         gameObject.GetComponent<Collider>().enabled = false;
         gameObject.transform.eulerAngles = new Vector3(-1.5f, 88.0f, -89.0f);
+        ValueClass.FrontInvisiwall = changeFrontWall;
         Sonido.Play();
     }
 
@@ -61,6 +64,7 @@ public class Chainsaw : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().isKinematic = false;
         gameObject.GetComponent<Rigidbody>().useGravity = true;
         gameObject.GetComponent<Collider>().enabled = true;
+        ValueClass.FrontInvisiwall = frontWall;
         Sonido.Stop();
     }
 }

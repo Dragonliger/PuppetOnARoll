@@ -19,11 +19,6 @@ public class ExplosiveTeeth : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Ingredient TempIng = collision.gameObject.GetComponent<Ingredient>();
-        if (TempIng != null)
-        {
-            TempIng.Cut();
-        }
         Rigidbody Explody = collision.gameObject.GetComponent<Rigidbody>();
         if(Explody != null)
         {

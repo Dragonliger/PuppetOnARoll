@@ -5,16 +5,39 @@ using UnityEngine;
 public class Values : MonoBehaviour {
 
     public float CullingHeight = -1.0f;
+<<<<<<< HEAD
+=======
     public int BrownCylinders = 10;
     public int GreenSpheres = 5;
     public int BlueCubes = 12;
-    public int MegaBrownCylinders = 1;
-    public int MegaGreenSpheres = 0;
-    public int MegaBlueCubes = 1;
+>>>>>>> parent of c32c382... PrototypeDone
     public GameStates GameGovernor;
     public float ChainsawTeethForce = 1.0f;
-    public float ToolMinimumHeight = 2.0f;
-    public float CuttingCountDown = 1.0f;
+
+    //Legacy counters, consider deleting.
+    int BrownCylinders = 10;
+    int GreenSpheres = 5;
+    int BlueCubes = 12;
+    int MegaBrownCylinders = 1;
+    int MegaBlueCubes = 1;
+    //int MegaGreenSpheres = 0;
+
+
+    //MouseFollowMotor Values
+    public float speed = 10.0f;
+    public float DragSpeed = 3.0f;
+    public float DownSpeed = 16.0f;
+    public float UpSpeed = 18.0f;
+    public float DefaultHeight = 6.11f;
+    public float MinimumHeight = 2.6f;
+    public float LeftInvisiwall = -18.0f;
+    public float RightInvisiwall = 18.0f;
+    public float FrontInvisiwall = 20.8f;
+    public float BackInvisiwall = 0.0f;
+    public bool Playing = true;
+    public GameObject ResetPoint;
+    public float ReturnSpeed = 6.0f;
+    public float TimerStart = 180.0f;
 
     public void Decrease(string Tag)
     {
@@ -43,24 +66,6 @@ public class Values : MonoBehaviour {
         {
             BrownCylinders--;
             if (BrownCylinders < 1)
-            {
-                // Launch Game Over.
-                GameGovernor.GameOverScreen("Not enough ingredients.");
-            }
-        }
-        else if(Tag == "MegaBlueCube")
-        {
-            MegaBlueCubes--;
-            if (MegaBlueCubes < 1)
-            {
-                // Launch Game Over.
-                GameGovernor.GameOverScreen("Not enough ingredients.");
-            }
-        }
-        else if (Tag == "MegaBrownCylinder")
-        {
-            MegaBrownCylinders--;
-            if (MegaBrownCylinders < 1)
             {
                 // Launch Game Over.
                 GameGovernor.GameOverScreen("Not enough ingredients.");

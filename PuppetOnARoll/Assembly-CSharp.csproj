@@ -70,6 +70,8 @@
     <Compile Include="Assets\Scripts\Motors\MouseFollowMotor.cs" />
     <Compile Include="Assets\Scripts\Motors\MouseMotor.cs" />
     <Compile Include="Assets\Scripts\Motors\SimpleMotor.cs" />
+    <Compile Include="Assets\Scripts\Tool\Tool.cs" />
+    <Compile Include="Assets\Scripts\UIAndGoals\Countdown.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\DumbUpdate.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\GameStates.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\Goal.cs" />

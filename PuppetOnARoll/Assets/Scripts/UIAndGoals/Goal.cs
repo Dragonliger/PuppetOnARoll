@@ -47,8 +47,6 @@ public class Goal : MonoBehaviour {
                                 GameGovernor.VictoryScreen();
                             }
                             index++;
-                            IngredientsList.Remove(IngredientTag);
-                            break;
                         }
                     }
                 }

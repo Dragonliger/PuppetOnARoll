@@ -9,9 +9,6 @@ TagManager:
   - BrownCylinder
   - UsedIngredient
   - Tool
-  - MegaBlueCube
-  - MegaGreenSphere
-  - MegaBrownCylinder
   layers:
   - Default
   - TransparentFX
