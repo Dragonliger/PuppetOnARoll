@@ -15,6 +15,7 @@ TagManager:
   - Rice
   - Cucumber
   - Lid
+  - CookedRice
   layers:
   - Default
   - TransparentFX

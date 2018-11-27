@@ -732,6 +732,25 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48e4022bcac4d4902943a4808c189e59, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &128367871 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1081494536646598, guid: a914b32929fb648118233528bcdbe10b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1639610546}
+--- !u!114 &128367872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 128367871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 243c339d378084a8eac79f17e23a7ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Lidder: {fileID: 1167483618}
+  timer: 5
+  cookedRiceMat: {fileID: 2100000, guid: 5a569e7916eba4a33b422f8abd2fd28d, type: 2}
 --- !u!1001 &130033651
 Prefab:
   m_ObjectHideFlags: 0
@@ -2461,41 +2480,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 114608055304666828, guid: 48e4022bcac4d4902943a4808c189e59,
-        type: 2}
-      propertyPath: ValueClass
-      value: 
-      objectReference: {fileID: 1897847996}
-    - target: {fileID: 114523703197158864, guid: 48e4022bcac4d4902943a4808c189e59,
-        type: 2}
-      propertyPath: ValueClass
-      value: 
-      objectReference: {fileID: 1897847996}
-    - target: {fileID: 114473226546646552, guid: 48e4022bcac4d4902943a4808c189e59,
-        type: 2}
-      propertyPath: ValueClass
-      value: 
-      objectReference: {fileID: 1897847996}
-    - target: {fileID: 114448373950784666, guid: 48e4022bcac4d4902943a4808c189e59,
-        type: 2}
-      propertyPath: ValueClass
-      value: 
-      objectReference: {fileID: 1897847996}
-    - target: {fileID: 114874506036512412, guid: 48e4022bcac4d4902943a4808c189e59,
+    - target: {fileID: 114678570426870084, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
       propertyPath: ValueClass
       value: 
       objectReference: {fileID: 1897847996}
     - target: {fileID: 114678570426870084, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
-      propertyPath: ValueClass
-      value: 
-      objectReference: {fileID: 1897847996}
-    - target: {fileID: 114874506036512412, guid: 48e4022bcac4d4902943a4808c189e59,
-        type: 2}
       propertyPath: GoalGovernor
       value: 
       objectReference: {fileID: 1897847999}
+    - target: {fileID: 114608055304666828, guid: 48e4022bcac4d4902943a4808c189e59,
+        type: 2}
+      propertyPath: ValueClass
+      value: 
+      objectReference: {fileID: 1897847996}
     - target: {fileID: 114608055304666828, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
       propertyPath: GoalGovernor
@@ -2503,20 +2502,40 @@ Prefab:
       objectReference: {fileID: 1897847999}
     - target: {fileID: 114473226546646552, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
+      propertyPath: ValueClass
+      value: 
+      objectReference: {fileID: 1897847996}
+    - target: {fileID: 114473226546646552, guid: 48e4022bcac4d4902943a4808c189e59,
+        type: 2}
       propertyPath: GoalGovernor
       value: 
       objectReference: {fileID: 1897847999}
     - target: {fileID: 114523703197158864, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
-      propertyPath: GoalGovernor
+      propertyPath: ValueClass
       value: 
-      objectReference: {fileID: 1897847999}
-    - target: {fileID: 114678570426870084, guid: 48e4022bcac4d4902943a4808c189e59,
+      objectReference: {fileID: 1897847996}
+    - target: {fileID: 114523703197158864, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
       propertyPath: GoalGovernor
       value: 
       objectReference: {fileID: 1897847999}
     - target: {fileID: 114448373950784666, guid: 48e4022bcac4d4902943a4808c189e59,
+        type: 2}
+      propertyPath: ValueClass
+      value: 
+      objectReference: {fileID: 1897847996}
+    - target: {fileID: 114448373950784666, guid: 48e4022bcac4d4902943a4808c189e59,
+        type: 2}
+      propertyPath: GoalGovernor
+      value: 
+      objectReference: {fileID: 1897847999}
+    - target: {fileID: 114874506036512412, guid: 48e4022bcac4d4902943a4808c189e59,
+        type: 2}
+      propertyPath: ValueClass
+      value: 
+      objectReference: {fileID: 1897847996}
+    - target: {fileID: 114874506036512412, guid: 48e4022bcac4d4902943a4808c189e59,
         type: 2}
       propertyPath: GoalGovernor
       value: 
