@@ -1969,14 +1969,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 579611788}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e5d432b459be4524ac007108e3fa876, type: 3}
+  m_Script: {fileID: 11500000, guid: 448560fa1710a41cfa4e30d1b491b85a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ValueClass: {fileID: 1897847996}
+  GameGovernor: {fileID: 1897847998}
   GrabPoint: {fileID: 1928647733}
   HandAnimator: {fileID: 1645026491}
-  difficult: 0
-  playing: 1
+  GrabReset: 0.5
 --- !u!4 &601674817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4085312325355914, guid: 48e4022bcac4d4902943a4808c189e59,
@@ -4403,7 +4403,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d84857362ded4b5b937d9891ea7932e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GrabScript: {fileID: 579611792}
   TimerText: {fileID: 913277630}
   VictoryScreenPrefab: {fileID: 34757279}
   GameOverScreenPrefab: {fileID: 1213368914}

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class GameStates : MonoBehaviour {
 
-    public Grab GrabScript;
     public GameObject TimerText;
     //public GameObject PanelText;
     public GameObject VictoryScreenPrefab;
@@ -26,7 +25,6 @@ public class GameStates : MonoBehaviour {
     public void StopPlay()
     {
         gameObject.GetComponent<Values>().Playing = false;
-        GrabScript.playing = false;
         TimerText.SetActive(false);
         //PanelText.SetActive(false);
         Playing = false;
@@ -35,7 +33,6 @@ public class GameStates : MonoBehaviour {
     public void StartPlay()
     {
         gameObject.GetComponent<Values> ().Playing = true;
-        GrabScript.playing = true;
         TimerText.SetActive(true);
         //PanelText.SetActive(true);
         Playing = true;
