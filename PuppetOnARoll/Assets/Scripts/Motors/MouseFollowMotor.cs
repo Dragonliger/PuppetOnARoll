@@ -20,11 +20,13 @@ public class MouseFollowMotor : MonoBehaviour
     //public float ReturnSpeed = 6.0f;
 
     private Values ValueClass;
+    private GameStates GameGovernor;
     private float RealSpeed = 0.0f;
 
     private void Awake()
     {
         ValueClass = gameObject.GetComponent<Values>();
+        GameGovernor = gameObject.GetComponent<GameStates>();
     }
 
     // Use this for initialization
@@ -63,6 +65,7 @@ public class MouseFollowMotor : MonoBehaviour
                 {
                     YAxisMovement = Difference * -1.0f;
                 }
+                ValueClass.GoalGovernor.GoalMet(0, true, 1, "Use space to grab things", false);
             }
         }
         // When the button is released the hand goes up again.

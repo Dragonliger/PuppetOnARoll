@@ -6,6 +6,7 @@ public class Values : MonoBehaviour {
 
     public float CullingHeight = -1.0f;
     public GameStates GameGovernor;
+    public GoalManager GoalGovernor;
     public float ChainsawTeethForce = 1.0f;
     public float ToolMinimumHeight = 2.0f;
     public float CuttingCountDown = 1.0f;

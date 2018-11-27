@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class LidTester : MonoBehaviour {
 
+    public GoalManager GoalGovernor;
+
     private bool Lid = false;
 
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 
@@ -28,6 +31,7 @@ public class LidTester : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Lid"))
         {
+            GoalGovernor.GoalMet(2, true, 5, "Put some rice into the rice cooker", false);
             Lid = false;
         }
     }

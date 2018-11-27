@@ -32,6 +32,7 @@ public class AlternateGrab : MonoBehaviour {
             // Close the hand upon grab button.
             if (Input.GetButtonDown("Grab") && GameGovernor.isPlaying())
             {
+                ValueClass.GoalGovernor.GoalMet(1, true, 2, "Take the lid off the rice cooker", false);
                 HandAnimator.SetBool("Close", true);
             }
             // If the grab button is released and no object was grabbed open the hand.
@@ -71,6 +72,7 @@ public class AlternateGrab : MonoBehaviour {
         // If the hand is in collision with an object and Grab is pressed
         if(Input.GetButton("Grab") && GameGovernor.isPlaying() && CanGrab)
         {
+            ValueClass.GoalGovernor.GoalMet(1, true, 2, "Take the lid off the rice cooker", false);
             CanGrab = false;
             Touching = collision.gameObject;
             if (collision.gameObject.tag == "Tool")
@@ -100,6 +102,10 @@ public class AlternateGrab : MonoBehaviour {
                 Touching.transform.SetParent(GrabPoint.transform);
             }
             WasUp = false;
+            if(collision.gameObject.tag == "Lid")
+            {
+                ValueClass.GoalGovernor.GoalMet(6, true, 7, "Put the rice into the rice cooker", false);
+            }
         }
     }
 
