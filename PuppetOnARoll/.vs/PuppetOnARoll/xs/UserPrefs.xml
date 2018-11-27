@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/Scripts/Motors/AlternateGrab.cs" Line="93" Column="18" />
       <File FileName="Assets/Scripts/Tool/LidTester.cs" Line="21" Column="47" />
-      <File FileName="Assets/Scripts/Tool/RiceCooker.cs" Line="7" Column="15" />
+      <File FileName="Assets/Scripts/Tool/RiceCooker.cs" Line="29" Column="34" />
       <File FileName="Assets/Scripts/Motors/Grab.cs" Line="31" Column="34" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
