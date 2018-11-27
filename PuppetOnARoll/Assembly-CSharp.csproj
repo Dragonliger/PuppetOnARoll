@@ -71,6 +71,8 @@
     <Compile Include="Assets\Scripts\Motors\MouseFollowMotor.cs" />
     <Compile Include="Assets\Scripts\Motors\MouseMotor.cs" />
     <Compile Include="Assets\Scripts\Motors\SimpleMotor.cs" />
+    <Compile Include="Assets\Scripts\Tool\LidTester.cs" />
+    <Compile Include="Assets\Scripts\Tool\RiceCooker.cs" />
     <Compile Include="Assets\Scripts\Tool\Tool.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\Countdown.cs" />
     <Compile Include="Assets\Scripts\UIAndGoals\DumbUpdate.cs" />

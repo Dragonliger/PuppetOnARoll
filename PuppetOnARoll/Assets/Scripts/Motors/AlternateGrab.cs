@@ -84,10 +84,16 @@ public class AlternateGrab : MonoBehaviour {
                     collision.gameObject.GetComponent<Chainsaw>().ToolGrabbed();
                     ValueClass.MinimumHeight = ValueClass.ToolMinimumHeight;
                 }
+                else
+                {
+                    Touching.GetComponent<Rigidbody>().isKinematic = true;
+                    Touching.GetComponent<Rigidbody>().useGravity = false;
+                    Touching.transform.position = GrabPoint.transform.position;
+                    Touching.transform.SetParent(GrabPoint.transform);
+                }
             }
             else
             {
-                Touching = collision.gameObject;
                 Touching.GetComponent<Rigidbody>().isKinematic = true;
                 Touching.GetComponent<Rigidbody>().useGravity = false;
                 //Touching.transform.position = GrabPoint.transform.position;
