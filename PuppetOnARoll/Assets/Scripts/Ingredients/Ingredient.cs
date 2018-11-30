@@ -55,7 +55,11 @@ public class Ingredient : MonoBehaviour {
             {
                 foreach (Transform Child in transform)
                 {
-                    Child.gameObject.GetComponent<Ingredient>().ActivateCollisions();
+                    Ingredient tempIng = Child.gameObject.GetComponent<Ingredient>();
+                    if (tempIng != null)
+                    {
+                        tempIng.ActivateCollisions();
+                    }
                 }
                 transform.DetachChildren();
                 Destroy(gameObject);

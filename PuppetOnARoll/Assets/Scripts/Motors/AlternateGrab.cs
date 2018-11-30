@@ -48,7 +48,7 @@ public class AlternateGrab : MonoBehaviour {
         }
         else
         {
-            if(Input.GetButtonDown("Grab") && GameGovernor.isPlaying() && WasUp)
+            if(Input.GetButtonDown("Release") && GameGovernor.isPlaying() && WasUp)
             {
                 Touching.GetComponent<Rigidbody>().isKinematic = false;
                 Touching.GetComponent<Rigidbody>().useGravity = true;
