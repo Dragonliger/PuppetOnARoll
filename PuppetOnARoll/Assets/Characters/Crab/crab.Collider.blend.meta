@@ -1,0 +1,198 @@
+fileFormatVersion: 2
+guid: 16d38b8a474bd40e1a102eb352821601
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Arm_L_1
+    100002: Arm_L_2
+    100004: Arm_R_1
+    100006: Arm_R_2
+    100008: Armature
+    100010: Claw_L_1
+    100012: Claw_L_2
+    100014: Claw_R_1
+    100016: Claw_R_2
+    100018: Collider
+    100020: //RootNode
+    100022: Eye_L
+    100024: Eye_R
+    100026: IK_Claw_L
+    100028: IK_Claw_L_Pole
+    100030: IK_Claw_R
+    100032: IK_Claw_R_Pole
+    100034: IK_Leg_L_1
+    100036: IK_Leg_L_1_Pole
+    100038: IK_Leg_L_2
+    100040: IK_Leg_L_2_Pole
+    100042: IK_Leg_L_3
+    100044: IK_Leg_L_3_Pole
+    100046: IK_Leg_L_4
+    100048: IK_Leg_L_4_Pole
+    100050: IK_Leg_R_1
+    100052: IK_Leg_R_1_Pole
+    100054: IK_Leg_R_2
+    100056: IK_Leg_R_2_Pole
+    100058: IK_Leg_R_3
+    100060: IK_Leg_R_3_Pole
+    100062: IK_Leg_R_4
+    100064: IK_Leg_R_4_Pole
+    100066: Leg_L_1_1
+    100068: Leg_L_1_2
+    100070: Leg_L_2_1
+    100072: Leg_L_2_2
+    100074: Leg_L_3_1
+    100076: Leg_L_3_2
+    100078: Leg_L_4_1
+    100080: Leg_L_4_2
+    100082: Leg_R_1_1
+    100084: Leg_R_1_2
+    100086: Leg_R_2_1
+    100088: Leg_R_2_2
+    100090: Leg_R_3_1
+    100092: Leg_R_3_2
+    100094: Leg_R_4_1
+    100096: Leg_R_4_2
+    100098: Root
+    400000: Arm_L_1
+    400002: Arm_L_2
+    400004: Arm_R_1
+    400006: Arm_R_2
+    400008: Armature
+    400010: Claw_L_1
+    400012: Claw_L_2
+    400014: Claw_R_1
+    400016: Claw_R_2
+    400018: Collider
+    400020: //RootNode
+    400022: Eye_L
+    400024: Eye_R
+    400026: IK_Claw_L
+    400028: IK_Claw_L_Pole
+    400030: IK_Claw_R
+    400032: IK_Claw_R_Pole
+    400034: IK_Leg_L_1
+    400036: IK_Leg_L_1_Pole
+    400038: IK_Leg_L_2
+    400040: IK_Leg_L_2_Pole
+    400042: IK_Leg_L_3
+    400044: IK_Leg_L_3_Pole
+    400046: IK_Leg_L_4
+    400048: IK_Leg_L_4_Pole
+    400050: IK_Leg_R_1
+    400052: IK_Leg_R_1_Pole
+    400054: IK_Leg_R_2
+    400056: IK_Leg_R_2_Pole
+    400058: IK_Leg_R_3
+    400060: IK_Leg_R_3_Pole
+    400062: IK_Leg_R_4
+    400064: IK_Leg_R_4_Pole
+    400066: Leg_L_1_1
+    400068: Leg_L_1_2
+    400070: Leg_L_2_1
+    400072: Leg_L_2_2
+    400074: Leg_L_3_1
+    400076: Leg_L_3_2
+    400078: Leg_L_4_1
+    400080: Leg_L_4_2
+    400082: Leg_R_1_1
+    400084: Leg_R_1_2
+    400086: Leg_R_2_1
+    400088: Leg_R_2_2
+    400090: Leg_R_3_1
+    400092: Leg_R_3_2
+    400094: Leg_R_4_1
+    400096: Leg_R_4_2
+    400098: Root
+    2100000: unnamed
+    2300000: Collider
+    2300002: //RootNode
+    3300000: Collider
+    3300002: //RootNode
+    4300000: Collider
+    7400000: Default Take
+    7400002: Dead
+    7400004: Rest
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
