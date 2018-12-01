@@ -9,7 +9,7 @@
       <File FileName="Assets/Scripts/Ingredients/Values.cs" Line="9" Column="37" />
       <File FileName="Assets/Scripts/Animation/Chainsaw.cs" Line="22" Column="1" />
       <File FileName="Assets/Scripts/Ingredients/Ingredient.cs" Line="59" Column="24" />
-      <File FileName="Assets/Scripts/UIAndGoals/MainMenu.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/UIAndGoals/MainMenu.cs" Line="8" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
