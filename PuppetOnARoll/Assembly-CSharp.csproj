@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\LiveIngredients\CrabbyAI.cs" />
     <Compile Include="Assets\Scripts\LiveIngredients\CrabbyIngredient.cs" />
     <Compile Include="Assets\Scripts\LiveIngredients\CrabbyKill.cs" />
+    <Compile Include="Assets\Scripts\LiveIngredients\CrabbyWakey.cs" />
     <Compile Include="Assets\Scripts\Motors\AlternateGrab.cs" />
     <Compile Include="Assets\Scripts\Motors\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Motors\Grab.cs" />

@@ -468,8 +468,8 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    rootMotionBoneName: Root
-    rootMotionBoneRotation: {x: 0.4284117, y: 0.52559316, z: -0.4848778, w: 0.5523667}
+    rootMotionBoneName: Armature
+    rootMotionBoneRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1

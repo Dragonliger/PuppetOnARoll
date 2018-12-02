@@ -8,8 +8,12 @@ public class CrabbyKill : MonoBehaviour {
     public GameObject Instantiator;
     public float CuttingCountdown = 0.5f;
     public GameObject RootIngredient;
+    public GameObject IngredientBody;
+    public GameObject PrefabCrab;
+    public GameObject ShellAppearer;
 
     private float Countdown;
+    private bool invoked = false;
 
 	// Use this for initialization
 	void Start () {
@@ -47,19 +51,6 @@ public class CrabbyKill : MonoBehaviour {
 
     public void Cut()
     {
-        //if (Countdown < 0.01f)
-        //{
-        //    Ingredient tempIng = RootIngredient.GetComponent<Ingredient>();
-        //    if (tempIng != null)
-        //    {
-        //        tempIng.ActivateCollisions();
-        //    }
-        //    gameObject.GetComponent<Rigidbody>().useGravity = false;
-        //    gameObject.GetComponent<Rigidbody>().isKinematic = true;
-        //    gameObject.GetComponent<Collider>().enabled = false;
-        //    gameObject.GetComponent<CrabbyAI>().enabled = false;
-        //    Countdown = ValueClass.CuttingCountDown + .01f;
-        //}
         gameObject.GetComponent<Rigidbody>().useGravity = false;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Collider>().enabled = false;
@@ -72,6 +63,17 @@ public class CrabbyKill : MonoBehaviour {
             Pieza.ActivateCollisions();
         }
         RootIngredient.GetComponent<Transform>().DetachChildren();
+        if (invoked == false)
+        {
+            GameObject TempShell = Instantiate(PrefabCrab, ShellAppearer.transform);
+            TempShell.GetComponent<CrabbyIngredient>().Instantiator = RootIngredient.GetComponent<CrabbyIngredient>().Instantiator;
+            TempShell.GetComponent<CrabbyIngredient>().ValueClass = RootIngredient.GetComponent<CrabbyIngredient>().ValueClass;
+            invoked = true;
+            TempShell.GetComponent<CrabbyIngredient>().enabled = true;
+            TempShell.transform.parent = null;
+        }
+        Destroy(RootIngredient);
+        Destroy(IngredientBody);
     }
 
 }
