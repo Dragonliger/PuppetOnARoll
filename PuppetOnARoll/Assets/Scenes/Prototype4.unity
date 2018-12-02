@@ -2251,6 +2251,7 @@ GameObject:
   - component: {fileID: 579611790}
   - component: {fileID: 579611791}
   - component: {fileID: 579611792}
+  - component: {fileID: 579611793}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -2304,7 +2305,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 579611788}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 448560fa1710a41cfa4e30d1b491b85a, type: 3}
   m_Name: 
@@ -2314,6 +2315,18 @@ MonoBehaviour:
   GrabPoint: {fileID: 1928647733}
   HandAnimator: {fileID: 1645026491}
   GrabReset: 0.5
+--- !u!114 &579611793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 579611788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2271d428ea75b47918b9b17e03ec69c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GrabPoint: {fileID: 1928647733}
 --- !u!4 &601674817 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4085312325355914, guid: 48e4022bcac4d4902943a4808c189e59,
