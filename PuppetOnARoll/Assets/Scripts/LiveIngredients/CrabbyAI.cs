@@ -11,6 +11,7 @@ public class CrabbyAI : MonoBehaviour {
     public int randomCountdown = 5;
     public float bumper = 0.5f;
     public float FrontWallLimit = 0.0f;
+    public float Roof = 1.15f;
     public GameObject PokingStick;
 
     private int Counter = 0;
@@ -51,6 +52,10 @@ public class CrabbyAI : MonoBehaviour {
         if(PokingStick.transform.position.z <= FrontWallLimit)
         {
             transform.position = new Vector3(transform.position.x, transform.position.y, FrontWallLimit);
+        }
+        if(PokingStick.transform.position.y >= Roof)
+        {
+            transform.position = new Vector3(transform.position.x, Roof, transform.position.z);
         }
     }
 

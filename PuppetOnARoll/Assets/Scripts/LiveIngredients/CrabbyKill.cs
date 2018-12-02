@@ -64,10 +64,7 @@ public class CrabbyKill : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().isKinematic = true;
         gameObject.GetComponent<Collider>().enabled = false;
         gameObject.GetComponent<CrabbyAI>().enabled = false;
-        RootIngredient.GetComponent<Collider>().enabled = true;
-        RootIngredient.GetComponent<Rigidbody>().useGravity = true;
-        RootIngredient.GetComponent<Rigidbody>().isKinematic = false;
-        RootIngredient.GetComponent<Transform>().parent = null;
+        RootIngredient.GetComponent<CrabbyIngredient>().ActivateCollisions();
         List<CrabbyIngredient> Lista = new List<CrabbyIngredient>();
         Lista.AddRange(RootIngredient.GetComponent<Transform>().GetComponentsInChildren<CrabbyIngredient>());
         foreach(CrabbyIngredient Pieza in Lista)
