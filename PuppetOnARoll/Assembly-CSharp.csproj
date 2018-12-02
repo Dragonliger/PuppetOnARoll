@@ -61,10 +61,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Animation\AliveCrab.cs" />
     <Compile Include="Assets\Scripts\Animation\Chainsaw.cs" />
+    <Compile Include="Assets\Scripts\Animation\DeadCrab.cs" />
     <Compile Include="Assets\Scripts\Animation\ExplosiveTeeth.cs" />
     <Compile Include="Assets\Scripts\Ingredients\Ingredient.cs" />
     <Compile Include="Assets\Scripts\Ingredients\Values.cs" />
+    <Compile Include="Assets\Scripts\LiveIngredients\CrabbyAI.cs" />
+    <Compile Include="Assets\Scripts\LiveIngredients\CrabbyIngredient.cs" />
+    <Compile Include="Assets\Scripts\LiveIngredients\CrabbyKill.cs" />
     <Compile Include="Assets\Scripts\Motors\AlternateGrab.cs" />
     <Compile Include="Assets\Scripts\Motors\AnimationController.cs" />
     <Compile Include="Assets\Scripts\Motors\Grab.cs" />

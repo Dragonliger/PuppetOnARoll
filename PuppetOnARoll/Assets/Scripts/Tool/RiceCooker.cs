@@ -8,6 +8,7 @@ public class RiceCooker : MonoBehaviour {
     public LidTester Lidder;
     public float timer = 5.0f;
     public Material cookedRiceMat;
+    public DeadCrab Crabby;
     private AudioSource Sonido;
     private bool CookedOnce = false;
 
@@ -53,6 +54,7 @@ public class RiceCooker : MonoBehaviour {
         Invoke("cook", timer);
         if (Lidder.isLidOn() && (Rices.Count > 0) && !CookedOnce)
         {
+            Crabby.MakeAlive();
             Sonido.Play();
             CookedOnce = true;
             GoalGovernor.GoalMet(8, true, 9, "Grab the chainsaw", false);  
