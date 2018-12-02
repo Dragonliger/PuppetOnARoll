@@ -68,9 +68,11 @@ public class CrabbyAI : MonoBehaviour {
         return temp;
     }
 
-    void moveForward()
+    public void WakeUp()
     {
-
+        gameObject.GetComponent<Rigidbody>().useGravity = true;
+        gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        gameObject.GetComponent<Collider>().enabled = true;
     }
 
     public void SetBlendedEulerAngles(Vector3 angles)

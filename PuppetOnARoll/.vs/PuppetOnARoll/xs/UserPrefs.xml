@@ -1,20 +1,17 @@
 ﻿<Properties StartupConfiguration="{1E2EB022-421A-8C98-8384-5067777E1AC6}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ingredients/Ingredient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LiveIngredients/CrabbyIngredient.cs">
     <Files>
-      <File FileName="Assets/Scripts/Motors/AlternateGrab.cs" Line="51" Column="44" />
-      <File FileName="Assets/Scripts/Tool/LidTester.cs" Line="28" Column="6" />
-      <File FileName="Assets/Scripts/Tool/RiceCooker.cs" Line="57" Column="32" />
+      <File FileName="Assets/Scripts/Tool/RiceCooker.cs" Line="58" Column="27" />
       <File FileName="Assets/Scripts/UIAndGoals/Goal.cs" Line="24" Column="2" />
       <File FileName="Assets/Scripts/Motors/MouseFollowMotor.cs" Line="133" Column="13" />
-      <File FileName="Assets/Scripts/Ingredients/Values.cs" Line="9" Column="37" />
       <File FileName="Assets/Scripts/Animation/Chainsaw.cs" Line="22" Column="1" />
-      <File FileName="Assets/Scripts/UIAndGoals/MainMenu.cs" Line="8" Column="29" />
       <File FileName="Assets/Scripts/Animation/DeadCrab.cs" Line="33" Column="1" />
       <File FileName="Assets/Scripts/Animation/AliveCrab.cs" Line="26" Column="46" />
-      <File FileName="Assets/Scripts/LiveIngredients/CrabbyAI.cs" Line="53" Column="10" />
-      <File FileName="Assets/Scripts/LiveIngredients/CrabbyKill.cs" Line="53" Column="6" />
-      <File FileName="Assets/Scripts/LiveIngredients/CrabbyIngredient.cs" Line="9" Column="12" />
-      <File FileName="Assets/Scripts/Ingredients/Ingredient.cs" Line="12" Column="29" NotebookId="1" />
+      <File FileName="Assets/Scripts/LiveIngredients/CrabbyKill.cs" Line="64" Column="10" />
+      <File FileName="Assets/Scripts/LiveIngredients/CrabbyIngredient.cs" Line="55" Column="94" />
+      <File FileName="Assets/Scripts/LiveIngredients/CrabbyWakey.cs" Line="26" Column="103" />
+      <File FileName="Assets/Scripts/Ingredients/Ingredient.cs" Line="27" Column="18" NotebookId="1" />
+      <File FileName="Assets/Scripts/LiveIngredients/CrabbyAI.cs" Line="78" Column="42" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

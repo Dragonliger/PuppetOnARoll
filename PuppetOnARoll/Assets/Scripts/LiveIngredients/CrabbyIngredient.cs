@@ -52,7 +52,7 @@ public class CrabbyIngredient : MonoBehaviour {
             {
                 foreach (Transform Child in transform)
                 {
-                    Ingredient tempIng = Child.gameObject.GetComponent<Ingredient>();
+                    CrabbyIngredient tempIng = Child.gameObject.GetComponent<CrabbyIngredient>();
                     if (tempIng != null)
                     {
                         tempIng.ActivateCollisions();
