@@ -74,6 +74,7 @@ public class CrabbyKill : MonoBehaviour {
         }
         Destroy(RootIngredient);
         Destroy(IngredientBody);
+        ValueClass.GoalGovernor.GoalMet(7, true, 8, "Put the crab on the cutting board", false);
     }
 
 }

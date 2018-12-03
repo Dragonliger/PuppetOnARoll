@@ -31,7 +31,7 @@ public class LidTester : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Lid"))
         {
-            GoalGovernor.GoalMet(2, true, 5, "Put some rice into the rice cooker", false);
+            GoalGovernor.GoalMet(3, true, 4, "Put some rice into the rice cooker", false);
             Lid = false;
         }
     }

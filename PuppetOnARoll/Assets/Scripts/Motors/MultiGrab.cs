@@ -38,6 +38,7 @@ public class MultiGrab : MonoBehaviour {
         }
         if (Input.GetButtonDown("Release") && GameGovernor.isPlaying() && Releaseable)
         {
+            ValueClass.GoalGovernor.GoalMet(2, true, 3, "Lift the lid of the rice cooker", false);
             foreach(GameObject Grabbed in Touching)
             {
                 Grabbed.GetComponent<Rigidbody>().isKinematic = false;
@@ -45,7 +46,7 @@ public class MultiGrab : MonoBehaviour {
                 if (Grabbed.GetComponent<Chainsaw>() != null)
                 {
                     Grabbed.GetComponent<Chainsaw>().ToolDropped();
-                    //ValueClass.MinimumHeight = TemporaryMinHeight;
+                    ValueClass.MinimumHeight = TemporaryMinHeight;
                 }
                 Grabbed.transform.SetParent(null);
             }
@@ -101,6 +102,7 @@ public class MultiGrab : MonoBehaviour {
                     Touching.Remove(collision.gameObject);
                 }
             }
+            ValueClass.GoalGovernor.GoalMet(1, true, 2, "Use right-click to release", false);
         }
     }
 }

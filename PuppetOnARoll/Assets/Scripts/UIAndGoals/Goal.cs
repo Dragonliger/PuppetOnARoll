@@ -33,11 +33,15 @@ public class Goal : MonoBehaviour {
         {
             if(collision.gameObject.CompareTag("CookedRice"))
             {
-                GoalGovernor.GoalMet(11, true, 12, "Place the cucumber on the cutting board", false);
+                GoalGovernor.GoalMet(9, true, 10, "Cut the cucumber", false);
             }
             if(collision.gameObject.CompareTag("Cucumber"))
             {
-                GoalGovernor.GoalMet(12, true, 13, "You win", true);
+                GoalGovernor.GoalMet(11, true, 12, "You win", true);
+            }
+            if(collision.gameObject.CompareTag("Crab"))
+            {
+                GoalGovernor.GoalMet(8, true, 9, "Put the cooked rice on the cutting board", false);
             }
         }
 

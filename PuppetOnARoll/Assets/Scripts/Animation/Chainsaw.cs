@@ -54,7 +54,7 @@ public class Chainsaw : MonoBehaviour {
         gameObject.transform.eulerAngles = new Vector3(-1.5f, 88.0f, -89.0f);
         ValueClass.FrontInvisiwall = changeFrontWall;
         Sonido.Play();
-        GoalGovernor.GoalMet(9, true, 10, "Cut the Cucumber", false);
+        GoalGovernor.GoalMet(6, true, 7, "Cut the Crab", false);
     }
 
     public void ToolDropped()

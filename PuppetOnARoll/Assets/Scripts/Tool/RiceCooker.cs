@@ -24,12 +24,12 @@ public class RiceCooker : MonoBehaviour {
 
 	}
 
-    private void OnCollisionStay(Collision collision)
+    private void OnTriggerStay(Collider collision)
     {
         GameObject Rice = collision.gameObject;
         if(Rice.CompareTag("Rice"))
         {
-            GoalGovernor.GoalMet(5, true, 8, "Put the lid on the rice cooker", false);
+            GoalGovernor.GoalMet(4, true, 5, "Put the lid on the rice cooker", false);
             Rices.Add(Rice);
         }
         if (Lidder.isLidOn())
@@ -38,9 +38,9 @@ public class RiceCooker : MonoBehaviour {
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        GameObject Rice = collision.gameObject;
+        GameObject Rice = other.gameObject;
         if (Rice.CompareTag("Rice"))
         {
             Rices.Remove(Rice);
@@ -54,10 +54,10 @@ public class RiceCooker : MonoBehaviour {
         Invoke("cook", timer);
         if (Lidder.isLidOn() && (Rices.Count > 0) && !CookedOnce)
         {
-            Crabby.WakeyCrabby();
             Sonido.Play();
             CookedOnce = true;
-            GoalGovernor.GoalMet(8, true, 9, "Grab the chainsaw", false);  
+            Crabby.WakeyCrabby();
+            GoalGovernor.GoalMet(5, true, 6, "Grab the chainsaw", false);
         }
     }
 

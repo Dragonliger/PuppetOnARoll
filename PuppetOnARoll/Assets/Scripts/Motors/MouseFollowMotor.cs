@@ -65,7 +65,7 @@ public class MouseFollowMotor : MonoBehaviour
                 {
                     YAxisMovement = Difference * -1.0f;
                 }
-                ValueClass.GoalGovernor.GoalMet(0, true, 1, "Use right click to release things", false);
+                ValueClass.GoalGovernor.GoalMet(0, true, 1, "Try grabbing something", false);
             }
         }
         // When the button is released the hand goes up again.

@@ -67,7 +67,7 @@ public class Ingredient : MonoBehaviour {
             Countdown = ValueClass.CuttingCountDown + .01f;
             if(gameObject.CompareTag("Cucumber"))
             {
-                GoalGovernor.GoalMet(10, true, 11, "Place the cooked rice on the cutting board", false);
+                GoalGovernor.GoalMet(10, true, 11, "Place the cucumber on the cutting board", false);
             }
         }
     }
