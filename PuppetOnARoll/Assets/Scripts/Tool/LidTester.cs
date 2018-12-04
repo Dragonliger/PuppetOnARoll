@@ -24,6 +24,7 @@ public class LidTester : MonoBehaviour {
         if(other.gameObject.CompareTag("Lid"))
         {
             Lid = true;
+            GoalGovernor.GoalMet(5, true, 6, "Grab the chainsaw", false);
         }
     }
 

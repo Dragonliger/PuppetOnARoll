@@ -12,6 +12,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Prototype3.unity
     guid: 5877993461ebd4382a54f79e32b381e1
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: ebf0ae1c21cc04f5896c45733cd6b1c6
+  - enabled: 1
+    path: Assets/Scenes/LevelScreen.unity
+    guid: 664c73334ed824611b61e6ab12387eb6
+  - enabled: 1
     path: Assets/Scenes/Prototype4.unity
     guid: 3cf786e46a0c34850b941b5fff183a39
   m_configObjects: {}

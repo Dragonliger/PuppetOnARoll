@@ -51,13 +51,12 @@ public class RiceCooker : MonoBehaviour {
 
     void startCooking()
     {
-        Invoke("cook", timer);
         if (Lidder.isLidOn() && (Rices.Count > 0) && !CookedOnce)
         {
             Sonido.Play();
             CookedOnce = true;
             Crabby.WakeyCrabby();
-            GoalGovernor.GoalMet(5, true, 6, "Grab the chainsaw", false);
+            Invoke("cook", timer);
         }
     }
 
